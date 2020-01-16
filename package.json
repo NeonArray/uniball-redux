@@ -1,0 +1,31 @@
+{
+  "author": "Richard Davey <rich@photonstorm.com> (http://www.photonstorm.com)",
+  "bugs": {
+    "url": "https://github.com/photonstorm/phaser3-typescript-project-template/issues"
+  },
+  "dependencies": {},
+  "description": "A Phaser 3 Project Template using Rollup and TypeScript",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "phaser": "^3.22.0",
+    "typescript": "^3.7.4"
+  },
+  "homepage": "https://github.com/photonstorm/phaser3-typescript-project-template#readme",
+  "license": "MIT",
+  "main": "src/game.ts",
+  "name": "phaser3-typescript-project-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/photonstorm/phaser3-typescript-project-template.git"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "src/assets"
+    ]
+  },
+  "version": "1.0.2"
+}
