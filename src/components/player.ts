@@ -61,6 +61,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.anims.play(`fall_${color}`);
             this.setVelocityY(Constants.P_SPIKE_SPEED);
             this.isMoving = true;
+        if (this.isFalling && this.body.touching.down) {
+            this.createFallingParticles();
+            this.isFalling = false;
+        }
         }
 
         if (!this.isMoving) {
