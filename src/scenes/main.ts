@@ -2,8 +2,6 @@ import 'phaser';
 import Player from '../components/player';
 import {OrbColor, Registry} from '../types';
 import Orb from '../components/orb';
-import Tilemap = Phaser.Tilemaps.Tilemap;
-import TileSprite = Phaser.GameObjects.TileSprite;
 
 const rnd = (low, high) => Phaser.Math.RND.integerInRange(low, high);
 
