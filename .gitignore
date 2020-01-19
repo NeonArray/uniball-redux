@@ -17,3 +17,5 @@ node_modules/
 dist/game.*.js
 dist/game.*.js.map
 dist/index.html
+dist/index.js
+dist/index.js.map
