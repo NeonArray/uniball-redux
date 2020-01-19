@@ -1,22 +1,36 @@
 import 'phaser';
 import Player from '../components/player';
-import { OrbColor } from '../types';
+import {OrbColor, Registry} from '../types';
+import Orb from '../components/orb';
+import Tilemap = Phaser.Tilemaps.Tilemap;
+import TileSprite = Phaser.GameObjects.TileSprite;
+
+const rnd = (low, high) => Phaser.Math.RND.integerInRange(low, high);
 
 export default class MainScene extends Phaser.Scene {
     private player: Player;
-    private currentColor: OrbColor = OrbColor.Red;
+    private currentColor: OrbColor = OrbColor.red;
     private groups;
 
     constructor() {
-        super('main');
+        super('MainScene');
     }
 
     preload(): void {
-        this.registry.set('currentOrbColor', OrbColor.Red);
+        this.registry.set('currentOrbColor', OrbColor.red);
 
         this.load.image('grass', 'env/grass.png');
 
-        for (let orbColorKey in OrbColor) {
+        this.load.multiatlas('s_orbs', 'objects/orbs.json', 'objects');
+        this.load.multiatlas('s_objects', 'objects/objects.json', 'objects');
+        this.load.multiatlas('s_explode', 'effects/explode.json', 'effects');
+
+        for (const orbColorKey in OrbColor) {
+
+            if (!OrbColor.hasOwnProperty(orbColorKey) || orbColorKey === OrbColor.wild) {
+                continue;
+            }
+
             this.load.multiatlas(
                 `s_bombguy_${OrbColor[orbColorKey]}`,
                 `player/bombguy-${OrbColor[orbColorKey]}.json`,
@@ -28,8 +42,10 @@ export default class MainScene extends Phaser.Scene {
     create(): void {
         this.groups = {
             platforms: this.physics.add.staticGroup(),
+            fx: this.add.group(),
         };
 
+        ///// ============== PLAYER =================
         this.player = new Player({
             scene: this,
             x: 300,
