@@ -97,6 +97,23 @@ export default class MainScene extends Phaser.Scene {
             () => {},
             this,
         );
+
+    private onWildOrbCollisionWithPlayer(player: Player, orb: Orb): void {
+        // I subtract one from the index because the frames generated for the animation don't seem to be zeroth based.
+        const index = orb.anims.currentFrame.index - 1;
+        const colors = ['red', 'green', 'purple', 'blue'];
+
+        this.currentColor = OrbColor[colors[index]];
+        this.registry.set(Registry.CurrentColor, this.currentColor);
+
+        orb.destroy();
+
+        player.setTexture(`s_bombguy_${this.currentColor}`);
+
+        this.createNextWildOrb();
+
+        this.events.emit('changeActiveColor', this.currentColor);
+    }
         }
 
         this.physics.add.collider(this.player, this.groups.platforms);
