@@ -31,9 +31,15 @@ export default class MainScene extends Phaser.Scene {
                 continue;
             }
 
+            // this.load.multiatlas(
+            //     `s_bombguy_${OrbColor[orbColorKey]}`,
+            //     `player/bombguy-${OrbColor[orbColorKey]}.json`,
+            //     'player'
+            // );
+
             this.load.multiatlas(
-                `s_bombguy_${OrbColor[orbColorKey]}`,
-                `player/bombguy-${OrbColor[orbColorKey]}.json`,
+                `s_peggie_${OrbColor[orbColorKey]}`,
+                `player/peggie-${OrbColor[orbColorKey]}.json`,
                 'player'
             );
         }
@@ -50,7 +56,7 @@ export default class MainScene extends Phaser.Scene {
             scene: this,
             x: 300,
             y: 200,
-            key: `s_bombguy_${this.currentColor}`,
+            key: `s_peggie_${this.currentColor}`,
             frame: 'Idle/1.png',
         });
 
@@ -176,7 +182,7 @@ export default class MainScene extends Phaser.Scene {
 
         orb.destroy();
 
-        player.setTexture(`s_bombguy_${this.currentColor}`);
+        player.setTexture(`s_peggie_${this.currentColor}`);
 
         this.createNextWildOrb();
 
