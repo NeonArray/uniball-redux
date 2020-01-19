@@ -38,8 +38,55 @@ export default class MainScene extends Phaser.Scene {
             frame: 'Idle/1.png',
         });
 
-        for (let step = 16; step < 800; step += 32) {
-            this.groups.platforms.create(step, 390, 'grass').refreshBody();
+        ///// ============== PLATFORMS =================
+        const ground = this.add.tileSprite(0, this.game.canvas.height - 16, this.game.canvas.width * 2, 32, 'grass');
+        this.groups.platforms.add(ground);
+
+        ///// ============== ORBS =================
+
+        this.anims.create({
+            key: 'explode',
+            frames: this.anims.generateFrameNames('s_explode', {
+                start: 0, end: 7,
+                prefix: 'explosion-2-',
+                suffix: '.png',
+            }),
+            frameRate: 22,
+            repeat: 0,
+        });
+
+        const orbGroupConfig = {
+            bounceY: 1,
+            bounceX: 1,
+            collideWorldBounds: true,
+            allowGravity: false,
+            velocityX: rnd(20, 200),
+            velocityY: rnd(20, 200),
+        };
+
+        this.groups.orbs = {
+            red: this.physics.add.group(orbGroupConfig),
+            blue: this.physics.add.group(orbGroupConfig),
+            green: this.physics.add.group(orbGroupConfig),
+            purple: this.physics.add.group(orbGroupConfig),
+            wild: this.physics.add.group(orbGroupConfig),
+        };
+
+        const colorArray = Object.keys(OrbColor);
+
+        colorArray.forEach((orbColorsKey: string, i: integer) => {
+            const _orb = new Orb({
+                scene: this,
+                x: rnd(50, this.game.canvas.width - 20),
+                y: rnd(50, this.game.canvas.height - 100),
+                key: 's_orbs',
+                frame: `orbs-${i}.png`,
+                color: orbColorsKey,
+            });
+
+            this.groups.orbs[orbColorsKey].add(_orb);
+        });
+
         ///// ============== COLLIDERS =================
         this.physics.add.collider([
             this.player,
