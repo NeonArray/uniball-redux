@@ -131,6 +131,34 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 repeat: 0,
             });
         }
+
+        this.currentScene.anims.create({
+            key: `p_run`,
+            frames: this.currentScene.anims.generateFrameNames(`s_objects`, {
+                start: 1, end: 6,
+                prefix: 'RunParticles/', suffix: '.png'
+            }),
+            frameRate: 12,
+            repeat: 0,
+        });
+        this.currentScene.anims.create({
+            key: `p_jump`,
+            frames: this.currentScene.anims.generateFrameNames(`s_objects`, {
+                start: 0, end: 5,
+                prefix: 'JumpParticles/', suffix: '.png'
+            }),
+            frameRate: 12,
+            repeat: 0,
+        });
+        this.currentScene.anims.create({
+            key: `p_fall`,
+            frames: this.currentScene.anims.generateFrameNames(`s_objects`, {
+                start: 0, end: 6,
+                prefix: 'FallParticles/', suffix: '.png'
+            }),
+            frameRate: 12,
+            repeat: 0,
+        });
     }
 
     /**
