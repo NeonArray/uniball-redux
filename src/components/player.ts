@@ -99,7 +99,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     private registerAnimations(): void {
         for (let orbColorKey in OrbColor) {
-            orbColorKey = orbColorKey.toLowerCase();
+
+            if (!OrbColor.hasOwnProperty(orbColorKey) || orbColorKey === OrbColor.wild) {
+                continue;
+            }
 
             this.currentScene.anims.create({
                 key: `idle_${orbColorKey}`,
