@@ -1,8 +1,7 @@
 import 'phaser';
 
 
-class Orb extends Phaser.GameObjects.Sprite implements Component {
-    color: OrbColor;
+export default class Orb extends Phaser.Physics.Arcade.Sprite {
     readonly color: OrbColor;
     readonly maxVelocity: number = 150;
     readonly scaledSize: number = 0.65;
@@ -10,17 +9,17 @@ class Orb extends Phaser.GameObjects.Sprite implements Component {
 
     constructor(params) {
         super(params.scene, params.x, params.y, params.key, params.frame);
+
+        this.color = params.color;
+
+        this.currentScene = params.scene;
+        this.initSprite();
+        this.currentScene.add.existing(this);
     }
 
-    create() {
-
+    update(): void {
     }
 
-    preload() {
-
-    }
-
-    update() {
     private initSprite(): void {
         this.currentScene.physics.world.enable(this);
 
