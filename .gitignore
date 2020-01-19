@@ -13,3 +13,7 @@ node_modules/
 /npm-debug.log
 .cache
 .github
+
+dist/game.*.js
+dist/game.*.js.map
+dist/index.html
