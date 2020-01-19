@@ -139,26 +139,27 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         return function () {
             const delay = 250;
             let lastTime;
+    private regenerateStamina(time: number): void {
+        const delay = 1000;
 
-            return function (context, time) {
+        return ((time: number) => {
 
-                if (time < lastTime + delay) {
-                    return;
-                }
+            if (this.stamina === this.staminaMax) {
+                return;
+            }
 
-                lastTime = time;
+            if (time < this.staminaDelayTime + delay) {
+                return;
+            }
 
-                context.add
-                    .sprite(
-                        _this.x,
-                        _this.y + 25,
-                        's_objects',
-                        'RunParticles/1.png'
-                    )
-                    .play('p_run')
-                    .on('animationcomplete', () => _this.destroy());
-            };
-        }();
+            this.staminaDelayTime = time;
+
+            this.stamina += 1;
+
+            this.currentScene.events.emit('regenerateStamina', this.stamina);
+        })(time);
+    }
+
     private createRunningParticles(time: number): void {
         const delay = 250;
 
