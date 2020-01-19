@@ -114,9 +114,41 @@ export default class MainScene extends Phaser.Scene {
 
         this.events.emit('changeActiveColor', this.currentColor);
     }
+    private onOrbCollisionWithPlayer(player: Player, orb: Orb): void {
+        if (this.currentColor === orb.color) {
+            const score = this.registry.get(Registry.Score) + 1;
+            this.registry.set(Registry.Score, score);
+            this.events.emit('scoreIncrease', score);
+        } else {
+
+            this.tweens.addCounter({
+                from: 0,
+                to: 100,
+                duration: 1500,
+                onUpdate: () => {
+                    player.setTintFill(0xffffff);
+                    this.time.delayedCall(250, () => {
+                        player.clearTint();
+                    });
+                }
+            });
+
+            this.add
+                .sprite(
+                    orb.x,
+                    orb.y,
+                    's_explode',
+                    'explosion-2-0.png'
+                )
+                .play('explode')
+                .on('animationcomplete', function () {
+                    this.destroy();
+                });
+            player.hit();
+            this.events.emit('playerHit');
         }
 
-        this.physics.add.collider(this.player, this.groups.platforms);
+        orb.destroy();
     }
 
     update(): void {
