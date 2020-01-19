@@ -168,6 +168,11 @@ export default class MainScene extends Phaser.Scene {
 
     update(time: number): void {
         this.player.update(time);
+        this.groups.orbs.red.getChildren().forEach((orb) => orb.update());
+        this.groups.orbs.green.getChildren().forEach((orb) => orb.update());
+        this.groups.orbs.blue.getChildren().forEach((orb) => orb.update());
+        this.groups.orbs.purple.getChildren().forEach((orb) => orb.update());
+        this.groups.orbs.wild.getChildren().forEach((orb) => orb.update());
     }
 
     private onWildOrbCollisionWithPlayer(player: Player, orb: Orb): void {
