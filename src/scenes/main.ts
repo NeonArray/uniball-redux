@@ -144,6 +144,11 @@ export default class MainScene extends Phaser.Scene {
             () => {},
             this,
         );
+    }
+
+    update(time: number): void {
+        this.player.update(time);
+    }
 
     private onWildOrbCollisionWithPlayer(player: Player, orb: Orb): void {
         // I subtract one from the index because the frames generated for the animation don't seem to be zeroth based.
