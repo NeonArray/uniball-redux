@@ -10,7 +10,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     private lastTime: number;
     private staminaDelayTime: number;
     private stamina: integer = 4;
-    private staminaMax: integer = 4;
+    readonly staminaMax: integer = 4;
     
     constructor(params) {
         super(params.scene, params.x, params.y, params.key, params.frame);
