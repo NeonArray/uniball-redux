@@ -166,6 +166,7 @@ export default class MainScene extends Phaser.Scene {
 
         this.events.emit('changeActiveColor', this.currentColor);
     }
+
     private onOrbCollisionWithPlayer(player: Player, orb: Orb): void {
         if (this.currentColor === orb.color) {
             const score = this.registry.get(Registry.Score) + 1;
@@ -203,7 +204,24 @@ export default class MainScene extends Phaser.Scene {
         orb.destroy();
     }
 
-    update(): void {
-        this.player.update();
+    private createNextWildOrb(): void {
+        if (this.groups.orbs.wild.countActive() > 1) {
+            return;
+        }
+
+        const secondsToWait = rnd(1, 5) * 1000;
+
+        this.time.delayedCall(secondsToWait, () => {
+            const orb = new Orb({
+                scene: this,
+                x: rnd(50, 300),
+                y: rnd(50, 300),
+                key: 's_orbs',
+                frame: `orbs-1.png`,
+                color: OrbColor.wild,
+            });
+            this.groups.orbs.wild.add(orb);
+            orb.anims.play('cycleColors');
+        }, [], this);
     }
 }
