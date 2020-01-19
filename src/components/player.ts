@@ -22,7 +22,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     hit(): void {
         const color = this.currentScene.registry.get(Registry.CurrentColor);
-        this.anims.play(`hit_${color}`, false);
+        // this.anims.play(`hit_${color}`, false);
     }
 
     update(time: number): void {
@@ -100,6 +100,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     private registerAnimations(): void {
+        const keyString = 's_peggie_';
+        
         for (let orbColorKey in OrbColor) {
 
             if (!OrbColor.hasOwnProperty(orbColorKey) || orbColorKey === OrbColor.wild) {
@@ -108,16 +110,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
             this.currentScene.anims.create({
                 key: `idle_${orbColorKey}`,
-                frames: this.currentScene.anims.generateFrameNames(`s_bombguy_${orbColorKey}`, {
-                    start: 1, end: 26,
+                frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
+                    start: 1, end: 34,
                     prefix: 'Idle/', suffix: '.png'
                 }),
-                frameRate: 15,
+                frameRate: 25,
+                repeatDelay: 1500,
                 repeat: -1,
             });
             this.currentScene.anims.create({
                 key: `run_${orbColorKey}`,
-                frames: this.currentScene.anims.generateFrameNames(`s_bombguy_${orbColorKey}`, {
+                frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 14,
                     prefix: 'Run/', suffix: '.png'
                 }),
@@ -126,7 +129,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             });
             this.currentScene.anims.create({
                 key: `jump_${orbColorKey}`,
-                frames: this.currentScene.anims.generateFrameNames(`s_bombguy_${orbColorKey}`, {
+                frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 4,
                     prefix: 'Jump/', suffix: '.png'
                 }),
@@ -135,7 +138,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             });
             this.currentScene.anims.create({
                 key: `fall_${orbColorKey}`,
-                frames: this.currentScene.anims.generateFrameNames(`s_bombguy_${orbColorKey}`, {
+                frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 2,
                     prefix: 'Fall/', suffix: '.png'
                 }),
@@ -144,7 +147,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             });
             this.currentScene.anims.create({
                 key: `hit_${orbColorKey}`,
-                frames: this.currentScene.anims.generateFrameNames(`s_bombguy_${orbColorKey}`, {
+                frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 8,
                     prefix: 'Hit/', suffix: '.png'
                 }),
@@ -182,9 +185,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         });
     }
 
-    /**
-     *
-     */
     private reduceStamina(): void {
         this.stamina = Phaser.Math.Clamp(this.stamina - 1, 0, this.staminaMax);
         this.currentScene.events.emit('regenerateStamina', this.stamina);
