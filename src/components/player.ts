@@ -49,7 +49,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.setVelocityX(0);
         }
 
-        if (Phaser.Input.Keyboard.JustDown(this.inputKeys.get('UP'))) {
+        if (
+            Phaser.Input.Keyboard.JustDown(this.inputKeys.get('UP'))
+            && this.stamina > 0
+        ) {
             this.anims.play(`jump_${color}`, true);
             this.createJumpingParticle();
             this.setVelocityY(Constants.P_JUMP_HEIGHT * -1);
