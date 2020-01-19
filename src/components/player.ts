@@ -65,6 +65,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.createFallingParticles();
             this.isFalling = false;
         }
+
+        if (this.body.touching.down) {
+            this.regenerateStamina(time);
         }
 
         if (!this.isMoving) {
