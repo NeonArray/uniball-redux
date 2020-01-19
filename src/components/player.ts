@@ -21,9 +21,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     hit(): void {
-        const color = this.currentScene.registry.get('currentOrbColor');
-
-        this.anims.play(`hit_${color}`, true);
+        const color = this.currentScene.registry.get(Registry.CurrentColor);
+        this.anims.play(`hit_${color}`, false);
     }
 
     update(time: number): void {
