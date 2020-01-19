@@ -1,5 +1,6 @@
 import 'phaser';
 import {OrbColor} from '../types';
+import Text = Phaser.GameObjects.Text;
 
 const rnd = (low, high) => Phaser.Math.RND.integerInRange(low, high);
 
@@ -8,6 +9,8 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
     readonly maxVelocity: number = 150;
     readonly scaledSize: number = 0.65;
     private currentScene: Phaser.Scene;
+    private label: Text;
+    private debug: boolean = false;
 
     constructor(params) {
         super(params.scene, params.x, params.y, params.key, params.frame);
@@ -17,9 +20,17 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
         this.currentScene = params.scene;
         this.initSprite();
         this.currentScene.add.existing(this);
+
+        if (this.debug) {
+            this.label = this.currentScene.add.text(this.x, this.y, this.color);
+        }
     }
 
     update(): void {
+        if (this.debug) {
+            this.label.x = this.x;
+            this.label.y = this.y;
+        }
     }
 
     private initSprite(): void {
