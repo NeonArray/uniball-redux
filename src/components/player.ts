@@ -26,7 +26,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.anims.play(`hit_${color}`, true);
     }
 
-    update(): void {
+    update(time: number): void {
         const color = this.currentScene.registry.get('currentOrbColor');
 
         if (this.inputKeys.get('LEFT').isDown) {
@@ -37,7 +37,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 this.anims.play(`run_${color}`, true);
                 this.isMoving = true;
 
-                this.createRunningParticles();
+                this.createRunningParticles(time);
             }
         } else if (this.inputKeys.get('RIGHT').isDown) {
             this.setFlipX(false);
@@ -47,7 +47,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 this.anims.play(`run_${color}`, true);
                 this.isMoving = true;
 
-                this.createRunningParticles();
+                this.createRunningParticles(time);
             }
         } else {
             this.isMoving = false;
