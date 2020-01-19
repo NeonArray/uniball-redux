@@ -40,6 +40,63 @@ export default class MainScene extends Phaser.Scene {
 
         for (let step = 16; step < 800; step += 32) {
             this.groups.platforms.create(step, 390, 'grass').refreshBody();
+        ///// ============== COLLIDERS =================
+        this.physics.add.collider([
+            this.player,
+            this.groups.orbs.red,
+            this.groups.orbs.blue,
+            this.groups.orbs.green,
+            this.groups.orbs.purple,
+            this.groups.orbs.wild,
+        ], this.groups.platforms);
+
+        this.physics.add.collider([
+            this.groups.orbs.red,
+            this.groups.orbs.blue,
+            this.groups.orbs.green,
+            this.groups.orbs.purple,
+            this.groups.orbs.wild,
+        ], [
+            this.groups.orbs.red,
+            this.groups.orbs.blue,
+            this.groups.orbs.green,
+            this.groups.orbs.purple,
+            this.groups.orbs.wild,
+        ]);
+
+        this.physics.add.collider(
+            this.player,
+            [
+                this.groups.orbs.red,
+                this.groups.orbs.blue,
+                this.groups.orbs.green,
+                this.groups.orbs.purple
+            ],
+            this.onOrbCollisionWithPlayer,
+            () => {},
+            this,
+        );
+
+        this.physics.add.collider(
+            this.player,
+            [
+                this.groups.orbs.red,
+                this.groups.orbs.blue,
+                this.groups.orbs.green,
+                this.groups.orbs.purple
+            ],
+            this.onWildOrbCollisionWithPlayer,
+            () => {},
+            this,
+        );
+
+        this.physics.add.collider(
+            this.player,
+            this.groups.orbs.wild,
+            this.onWildOrbCollisionWithPlayer,
+            () => {},
+            this,
+        );
         }
 
         this.physics.add.collider(this.player, this.groups.platforms);
