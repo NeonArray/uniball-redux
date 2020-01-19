@@ -159,24 +159,40 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                     .on('animationcomplete', () => _this.destroy());
             };
         }();
+    private createRunningParticles(time: number): void {
+        const delay = 250;
+
+        return ((time: number) => {
+
+            if (time < this.lastTime + delay) {
+                return;
+            }
+
+            this.lastTime = time;
+
+            this.currentScene.add
+                .sprite(this.x, this.y + 25, 's_objects', 'RunParticles/1.png')
+                .play('p_run')
+                .on('animationcomplete', function () {
+                    this.destroy();
+                });
+        })(time);
     }
 
-    private createJumpingParticle(): (context) => void {
-        const _this = this;
+    private createJumpingParticle(): void {
+        this.currentScene.add
+            .sprite(
+                this.x,
+                this.y + 17,
+                's_objects',
+                'JumpParticles/1.png'
+            )
+            .play('p_jump')
+            .on('animationcomplete', function () {
+                this.destroy()
+            });
+    }
 
-        return function () {
-            return function (context) {
-                context.add
-                    .sprite(
-                        _this.x,
-                        _this.y + 17,
-                        's_objects',
-                        'JumpParticles/1.png'
-                    )
-                    .play('p_jump')
-                    .on('animationcomplete', () => _this.destroy());
-            };
-        }();
     private createFallingParticles(): void {
         this.createJumpingParticle();
         this.currentScene.add
