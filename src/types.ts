@@ -1,13 +1,13 @@
 
 export enum OrbColor {
-    Red = 'red',
-    Blue = 'blue',
-    Green = 'green',
-    Purple = 'purple',
+    red = 'red',
+    blue = 'blue',
+    green = 'green',
+    purple = 'purple',
+    wild = 'wild',
 }
 
-export interface Component {
-    preload: Function;
-    create: Function;
-    update: Function;
+export enum Registry {
+    CurrentColor = 'currentOrbColor',
+    Score = 'score',
 }
