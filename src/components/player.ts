@@ -133,12 +133,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         }
     }
 
-    private createRunningParticles(): (context, time) => void {
-        const _this = this;
+    /**
+     *
+     */
+    private reduceStamina(): void {
+        this.stamina = Phaser.Math.Clamp(this.stamina - 1, 0, this.staminaMax);
+        this.currentScene.events.emit('regenerateStamina', this.stamina);
+    }
 
-        return function () {
-            const delay = 250;
-            let lastTime;
     private regenerateStamina(time: number): void {
         const delay = 1000;
 
