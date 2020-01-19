@@ -17,6 +17,20 @@ class Orb extends Phaser.GameObjects.Sprite implements Component {
     }
 
     update() {
+    private initSprite(): void {
+        this.currentScene.physics.world.enable(this);
+
+        this.setScale(this.scaledSize, this.scaledSize);
+        this.body.setCircle(16, 0, 0);
+        this.setMaxVelocity(this.maxVelocity, this.maxVelocity);
+
+        this.setCollideWorldBounds(true);
+        this.registerAnimations();
+
+        if (this.color === OrbColor.wild) {
+            this.anims.play('cycleColors');
+        }
+    }
 
     private registerAnimations(): void {
         if (typeof this.currentScene.anims.get('cycleColors') !== 'undefined') {
