@@ -12,10 +12,34 @@ const config: Phaser.Types.Core.GameConfig = {
         default: 'arcade',
         arcade: {
             gravity: { y: 300 },
-            debug: true,
+            debug: false,
         },
+    },
+    disableContextMenu: false,
+    render: {
+        pixelArt: true,
     },
     scene: scenes,
 };
 
-const game = new Phaser.Game(config);
+const resize: () => void = (): void => {
+    const canvas: HTMLCanvasElement = document.querySelector('canvas');
+    const windowWidth: number = window.innerWidth;
+    const windowHeight: number = window.innerHeight;
+    const windowRatio: number = windowWidth / windowHeight;
+    const gameRatio: number = 16/9;
+
+    if (windowRatio < gameRatio) {
+        canvas.style.width = `${windowWidth}px`;
+        canvas.style.height = `${windowWidth / gameRatio}px`;
+    } else {
+        canvas.style.width = `${windowHeight * gameRatio}px`;
+        canvas.style.height = `${windowHeight}px`;
+    }
+};
+
+window.onload = (): void => {
+    const game: Phaser.Game = new Phaser.Game(config);
+    resize();
+    window.addEventListener('resize', resize, false);
+};
