@@ -177,6 +177,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                     .on('animationcomplete', () => _this.destroy());
             };
         }();
+    private createFallingParticles(): void {
+        this.createJumpingParticle();
+        this.currentScene.add
+            .sprite(
+                this.x,
+                this.y + 17,
+                's_objects',
+                'FallParticles/1.png'
+            )
+            .play('p_fall')
+            .on('animationcomplete', function () {
+                this.destroy()
+            });
     }
 
     private registerControls(): void {
