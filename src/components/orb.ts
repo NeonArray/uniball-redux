@@ -1,5 +1,7 @@
 import 'phaser';
+import {OrbColor} from '../types';
 
+const rnd = (low, high) => Phaser.Math.RND.integerInRange(low, high);
 
 export default class Orb extends Phaser.Physics.Arcade.Sprite {
     readonly color: OrbColor;
