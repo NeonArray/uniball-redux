@@ -123,7 +123,7 @@ export default class MainScene extends Phaser.Scene {
                 frame: `Uniball-Redux/Objects/Orbs/${i}.png`,
                 color: orbColorsKey,
             });
-            _orb.create();
+          
             this.groups.orbs[orbColorsKey].add(_orb);
         });
 
