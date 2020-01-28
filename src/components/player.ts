@@ -86,6 +86,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         }
     }
 
+    public getStamina(): integer {
+        return this.stamina;
+    }
     private initSprite(): void {
         this.currentScene.physics.world.enable(this);
         this.registerAnimations();
