@@ -3,14 +3,14 @@
   "bugs": {
     "url": "https://github.com/photonstorm/phaser3-typescript-project-template/issues"
   },
-  "dependencies": {},
-  "description": "A Phaser 3 Project Template using Rollup and TypeScript",
-  "devDependencies": {
+  "dependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.2.1",
     "phaser": "^3.22.0",
     "typescript": "^3.7.4"
   },
+  "description": "A Phaser 3 Project Template using Rollup and TypeScript",
+  "devDependencies": {},
   "homepage": "https://github.com/photonstorm/phaser3-typescript-project-template#readme",
   "license": "MIT",
   "main": "src/game.ts",
