@@ -222,6 +222,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         })(time);
     }
 
+    private reduceHealth(): void {
+        this.health = Phaser.Math.Clamp(this.health - 1, 0, Constants.P_MAX_HEALTH);
+        this.currentScene.events.emit(EventNames.ReduceHealth, this.health);
+    }
     private createRunningParticles(time: number): void {
         const delay = 250;
 
