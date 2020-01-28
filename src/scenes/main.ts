@@ -3,7 +3,6 @@ import Player from '../components/player';
 import {OrbColor, Registry} from '../types';
 import Orb from '../components/orb';
 
-const rnd = (low, high) => Phaser.Math.RND.integerInRange(low, high);
 
 export default class MainScene extends Phaser.Scene {
     private player: Player;
@@ -80,8 +79,8 @@ export default class MainScene extends Phaser.Scene {
             bounceX: 1,
             collideWorldBounds: true,
             allowGravity: false,
-            velocityX: rnd(20, 200),
-            velocityY: rnd(20, 200),
+            velocityX: Phaser.Math.Between(20, 200),
+            velocityY: Phaser.Math.Between(20, 200),
         };
 
         this.groups.orbs = {
@@ -97,14 +96,49 @@ export default class MainScene extends Phaser.Scene {
         colorArray.forEach((orbColorsKey: string, i: integer) => {
             const _orb = new Orb({
                 scene: this,
-                x: rnd(50, this.game.canvas.width - 20),
-                y: rnd(50, this.game.canvas.height - 100),
-                key: 's_orbs',
-                frame: `orbs-${i}.png`,
+                x: Phaser.Math.Between(50, this.game.canvas.width - 20),
+                y: Phaser.Math.Between(50, this.game.canvas.height - 100),
+                key: Constants.SHEET_KEY,
+                frame: `Uniball-Redux/Objects/Orbs/${i}.png`,
                 color: orbColorsKey,
             });
-
+            _orb.create();
             this.groups.orbs[orbColorsKey].add(_orb);
+        });
+
+
+        ///// ============== STAMINA =================
+        this.anims.create({
+            key: 'stamina',
+            frames: this.anims.generateFrameNames('s_hud', {
+                start: 1, end: 11,
+                suffix: '.png',
+            }),
+            frameRate: 0,
+            repeat: 0,
+        });
+
+        this.staminaBar = this.add.sprite(this.player.x - 2, this.player.y - 32, 'stamina');
+
+        this.events.on(EventNames.RegeneratingStamina, (amount) => {
+            this.staminaBar.setAlpha(1);
+            this.staminaBar.setScale(amount / Constants.P_MAX_STAMINA, 1);
+        }, this);
+
+        this.events.on(EventNames.StaminaMaxed, () => {
+            this.staminaBar.setAlpha(0.15);
+        }, this);
+
+
+        this.anims.create({
+            key: 'smoke',
+            frames: this.anims.generateFrameNames(Constants.SHEET_KEY, {
+                start: 0, end: 7,
+                prefix: 'Uniball-Redux/Effects/Smoke/',
+                suffix: '.png',
+            }),
+            frameRate: 20,
+            repeat: 0,
         });
 
         ///// ============== COLLIDERS =================
@@ -260,15 +294,15 @@ export default class MainScene extends Phaser.Scene {
             return;
         }
 
-        const secondsToWait = rnd(1, 5) * 1000;
+        const secondsToWait = Phaser.Math.Between(1, 5) * 1000;
 
         this.time.delayedCall(secondsToWait, () => {
             const orb = new Orb({
                 scene: this,
-                x: rnd(50, 300),
-                y: rnd(50, 300),
-                key: 's_orbs',
-                frame: `orbs-1.png`,
+                x: Phaser.Math.Between(50, 300),
+                y: Phaser.Math.Between(50, 300),
+                key: Constants.SHEET_KEY,
+                frame: 'Uniball-Redux/Objects/Orbs/1.png',
                 color: OrbColor.wild,
             });
             this.groups.orbs.wild.add(orb);
