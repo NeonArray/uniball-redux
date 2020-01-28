@@ -3,7 +3,13 @@
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "target": "es2015",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "plugins": [
+            {
+                "name": "typescript-tslint-plugin",
+                "no-trailing-whitespace": false
+            }
+        ]
     },
     "include": [
         "./src/**/*"
