@@ -24,3 +24,34 @@ If an orb hit a point where two ground sprites met, the orb would have unpredict
 I knew what was happening but I wasn't sure how to fix it. I toyed with an idea of rendering the sprites as static images and then creating a geometry rectangle overtop of it - giving it a physics collider instead. That idea probably would have worked, but I couldn't manage it. Then I realized there was two separate tiled types, `TileMap` and `TileSprite`.
 
 TileSprite was the solution to the problem. It allowed me to generate the floor sprite to the length of the canvas with minimal code. Better yet though was that it only creates a single physics collider instead of 30+ in the scene. Problem solved.
+
+
+## Cache
+
+I have setup a HUD scene that is stacked on-top of the main scene. This HUD is intended to show, well, HUD items. I had the sprites I needed
+already loaded through the main scene, and didn't want to re-load the same sprite sheet again. I recalled a technique by John Carmack in which
+you should always try the obvious approach first, and only when that doesn't work - think about the clever approach. The "obvious" approach
+in this instance was to just re-use the same code in the HUD scene to load the `s_objects` sprite sheet.
+
+```javascript
+this.load.multiatlas('s_objects', 'objects/objects.json', 'objects');
+```
+
+When this code runs an error is thrown in the console. The `s_objects` key is already in use, since it's being loaded in the main scene. The
+question is, how can I access another scenes resources? My thought was perhaps to create a store and manually add any shared assets in said
+store that can be accessed by any class. 
+
+Instead of implementing this from scratch I had figured that it was surely already something built-in to Phaser. There's no way a performant
+game engine wouldn't cache the assets, so I'll start there.
+
+Reading through the docs, it is clear there is exactly this sort of functionality built-in. The `CacheManager` class handles all of the caching
+required by Phaser. Whenever you use `this.load.x` method calls, a reference is stored in the cache. The cache is supposed to be available
+in the scene using `this.cache` and chaining whatever resource type you need with it.
+
+```javascript
+this.cache.json.get('key');
+```
+
+When I set a breakpoint in the `create` method of my main scene, or HUD scene, I get a chance to explore this data via the web console. I 
+access `this.cache` and was returned an object. I investigated the object and found that all of the entries for each respective
+asset type, were totally empty. 
