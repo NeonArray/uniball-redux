@@ -231,6 +231,18 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.health = Phaser.Math.Clamp(this.health + 1, 0, Constants.P_MAX_HEALTH);
         this.currentScene.events.emit(EventNames.IncreaseHealth, this.health);
     }
+
+    private die(color: OrbColor): void {
+        const _this = this;
+
+        this.setVelocity(0, 100);
+
+        this.anims
+            .play(`dead_${color}`, true)
+            .on('animationcomplete', () => {
+                // TODO: Something should happen here, but t'what?
+            });
+    }
     private createRunningParticles(time: number): void {
         const delay = 250;
 
