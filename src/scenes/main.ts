@@ -190,6 +190,32 @@ export default class MainScene extends Phaser.Scene {
         this.createNextWildOrb();
 
         this.events.emit('changeActiveColor', this.currentColor);
+    private multiplyAnOrb(orb: Orb): void {
+        if (this.groups.orbs[orb.color].children.entries.length > 150) {
+            return;
+        }
+
+        const key = Object.keys(OrbColor);
+
+        const _orb = new Orb({
+            scene: this,
+            x: Phaser.Math.Between(50, this.game.canvas.width - 20),
+            y: Phaser.Math.Between(50, this.game.canvas.height - 100),
+            key: Constants.SHEET_KEY,
+            frame: `Uniball-Redux/Objects/Orbs/${key.indexOf(orb.color)}.png`,
+            color: orb.color,
+        });
+        const _orb2 = new Orb({
+            scene: this,
+            x: Phaser.Math.Between(50, this.game.canvas.width - 20),
+            y: Phaser.Math.Between(50, this.game.canvas.height - 100),
+            key: Constants.SHEET_KEY,
+            frame: `Uniball-Redux/Objects/Orbs/${key.indexOf(orb.color)}.png`,
+            color: orb.color,
+        });
+
+        this.groups.orbs[orb.color].add(_orb);
+        this.groups.orbs[orb.color].add(_orb2);
     }
 
     private onOrbCollisionWithPlayer(player: Player, orb: Orb): void {
