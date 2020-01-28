@@ -10,7 +10,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     private lastTime: number;
     private staminaDelayTime: number;
     private stamina: integer = 4;
-    readonly staminaMax: integer = 4;
+    private health: integer = 1;
     
     constructor(params) {
         super(params.scene, params.x, params.y, params.key, params.frame);
@@ -20,13 +20,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.currentScene.add.existing(this);
     }
 
-    hit(): void {
-        const color = this.currentScene.registry.get(Registry.CurrentColor);
-        // this.anims.play(`hit_${color}`, false);
-    }
-
-    update(time: number): void {
+    public update(time: number): void {
         const color = this.currentScene.registry.get('currentOrbColor');
+
+        if (this.health <= 0) {
+            this.die(color);
+            return;
+        }
 
         if (this.inputKeys.get('LEFT').isDown) {
             this.setFlipX(true);
@@ -104,6 +104,12 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
         this.body.setSize(35, 59);
         this.setCollideWorldBounds(true);
+
+        this.registerObservers();
+    }
+
+    private registerObservers(): void {
+        this.currentScene.events.on(EventNames.PlayerHit, this.hit, this);
     }
 
     private addKey(key: string): Phaser.Input.Keyboard.Key {
@@ -142,7 +148,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `jump_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 4,
-                    prefix: 'Jump/', suffix: '.png'
+                    prefix: 'Attack/', suffix: '.png'
                 }),
                 frameRate: 8,
                 repeat: 0,
@@ -165,31 +171,40 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 frameRate: 16,
                 repeat: 0,
             });
+            this.currentScene.anims.create({
+                key: `dead_${orbColorKey}`,
+                frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
+                    start: 1, end: 4,
+                    prefix: 'DeadGround/', suffix: '.png'
+                }),
+                frameRate: 4,
+                repeat: 2,
+            });
         }
 
         this.currentScene.anims.create({
             key: `p_run`,
-            frames: this.currentScene.anims.generateFrameNames(`s_objects`, {
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 1, end: 6,
-                prefix: 'RunParticles/', suffix: '.png'
+                prefix: 'Uniball-Redux/Effects/RunParticles/', suffix: '.png'
             }),
             frameRate: 12,
             repeat: 0,
         });
         this.currentScene.anims.create({
             key: `p_jump`,
-            frames: this.currentScene.anims.generateFrameNames(`s_objects`, {
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 5,
-                prefix: 'JumpParticles/', suffix: '.png'
+                prefix: 'Uniball-Redux/Effects/JumpParticles/', suffix: '.png'
             }),
             frameRate: 12,
             repeat: 0,
         });
         this.currentScene.anims.create({
             key: `p_fall`,
-            frames: this.currentScene.anims.generateFrameNames(`s_objects`, {
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 6,
-                prefix: 'FallParticles/', suffix: '.png'
+                prefix: 'Uniball-Redux/Effects/FallParticles/', suffix: '.png'
             }),
             frameRate: 12,
             repeat: 0,
@@ -197,8 +212,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     private reduceStamina(): void {
-        this.stamina = Phaser.Math.Clamp(this.stamina - 1, 0, this.staminaMax);
-        this.currentScene.events.emit('regenerateStamina', this.stamina);
+        this.stamina = Phaser.Math.Clamp(this.stamina - 1, 0, Constants.P_MAX_STAMINA);
+        this.currentScene.events.emit(EventNames.RegeneratingStamina, this.stamina);
     }
 
     private regenerateStamina(time: number): void {
@@ -206,7 +221,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
         return ((time: number) => {
 
-            if (this.stamina === this.staminaMax) {
+            if (this.stamina === Constants.P_MAX_STAMINA) {
+                this.currentScene.events.emit(EventNames.StaminaMaxed);
                 return;
             }
 
@@ -218,7 +234,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
             this.stamina += 1;
 
-            this.currentScene.events.emit('regenerateStamina', this.stamina);
+            this.currentScene.events.emit(EventNames.RegeneratingStamina, this.stamina);
         })(time);
     }
 
@@ -243,6 +259,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 // TODO: Something should happen here, but t'what?
             });
     }
+
     private createRunningParticles(time: number): void {
         const delay = 250;
 
@@ -255,7 +272,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.lastTime = time;
 
             this.currentScene.add
-                .sprite(this.x, this.y + 25, 's_objects', 'RunParticles/1.png')
+                .sprite(this.x, this.y + 25, Constants.SHEET_KEY, 'Uniball-Redux/Effects/RunParticles/1.png')
                 .play('p_run')
                 .on('animationcomplete', function () {
                     this.destroy();
@@ -268,8 +285,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             .sprite(
                 this.x,
                 this.y + 17,
-                's_objects',
-                'JumpParticles/1.png'
+                Constants.SHEET_KEY,
+                'Uniball-Redux/Effects/JumpParticles/1.png'
             )
             .play('p_jump')
             .on('animationcomplete', function () {
@@ -283,8 +300,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             .sprite(
                 this.x,
                 this.y + 17,
-                's_objects',
-                'FallParticles/1.png'
+                Constants.SHEET_KEY,
+                'Uniball-Redux/Effects/FallParticles/1.png'
             )
             .play('p_fall')
             .on('animationcomplete', function () {
