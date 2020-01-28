@@ -1,0 +1,1175 @@
+{
+	"textures": [
+		{
+			"image": "uniball-redux.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 256,
+				"h": 434
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Uniball-Redux/Env/sky.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 96,
+						"h": 224
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 96,
+						"h": 224
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 96,
+						"h": 224
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"frame": {
+						"x": 1,
+						"y": 227,
+						"w": 64,
+						"h": 64
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"frame": {
+						"x": 67,
+						"y": 227,
+						"w": 64,
+						"h": 64
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"frame": {
+						"x": 99,
+						"y": 1,
+						"w": 64,
+						"h": 64
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 63,
+						"h": 62
+					},
+					"frame": {
+						"x": 99,
+						"y": 67,
+						"w": 63,
+						"h": 62
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 58,
+						"h": 56
+					},
+					"frame": {
+						"x": 99,
+						"y": 131,
+						"w": 58,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Bomb/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 27,
+						"w": 36,
+						"h": 36
+					},
+					"frame": {
+						"x": 99,
+						"y": 189,
+						"w": 36,
+						"h": 36
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 4,
+						"w": 56,
+						"h": 56
+					},
+					"frame": {
+						"x": 133,
+						"y": 227,
+						"w": 56,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 6,
+						"w": 35,
+						"h": 35
+					},
+					"frame": {
+						"x": 137,
+						"y": 189,
+						"w": 35,
+						"h": 35
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Bomb/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 14,
+						"w": 62,
+						"h": 47
+					},
+					"frame": {
+						"x": 159,
+						"y": 131,
+						"w": 62,
+						"h": 47
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/FallParticles/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 78,
+						"h": 7
+					},
+					"frame": {
+						"x": 159,
+						"y": 180,
+						"w": 78,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/JumpParticles/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 26
+					},
+					"frame": {
+						"x": 174,
+						"y": 189,
+						"w": 40,
+						"h": 26
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/FallParticles/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 72,
+						"h": 7
+					},
+					"frame": {
+						"x": 174,
+						"y": 217,
+						"w": 72,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/FallParticles/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 72,
+						"h": 7
+					},
+					"frame": {
+						"x": 174,
+						"y": 217,
+						"w": 72,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/JumpParticles/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 38,
+						"h": 26
+					},
+					"frame": {
+						"x": 216,
+						"y": 189,
+						"w": 38,
+						"h": 26
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/RunParticles/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 7,
+						"h": 7
+					},
+					"frame": {
+						"x": 248,
+						"y": 217,
+						"w": 7,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 6,
+						"w": 52,
+						"h": 52
+					},
+					"frame": {
+						"x": 164,
+						"y": 67,
+						"w": 52,
+						"h": 52
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/FallParticles/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 6
+					},
+					"frame": {
+						"x": 164,
+						"y": 121,
+						"w": 80,
+						"h": 6
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 20,
+						"w": 27,
+						"h": 43
+					},
+					"frame": {
+						"x": 223,
+						"y": 129,
+						"w": 27,
+						"h": 43
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 26,
+						"w": 12,
+						"h": 12
+					},
+					"frame": {
+						"x": 239,
+						"y": 174,
+						"w": 12,
+						"h": 12
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/RunParticles/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 3
+					},
+					"frame": {
+						"x": 223,
+						"y": 174,
+						"w": 5,
+						"h": 3
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 28,
+						"y": 28,
+						"w": 8,
+						"h": 8
+					},
+					"frame": {
+						"x": 246,
+						"y": 1,
+						"w": 8,
+						"h": 8
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/RunParticles/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 3,
+						"w": 9,
+						"h": 7
+					},
+					"frame": {
+						"x": 246,
+						"y": 11,
+						"w": 9,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/RunParticles/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 3,
+						"w": 9,
+						"h": 7
+					},
+					"frame": {
+						"x": 246,
+						"y": 11,
+						"w": 9,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/RunParticles/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 5,
+						"w": 6,
+						"h": 5
+					},
+					"frame": {
+						"x": 246,
+						"y": 20,
+						"w": 6,
+						"h": 5
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/RunParticles/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 6
+					},
+					"frame": {
+						"x": 246,
+						"y": 27,
+						"w": 5,
+						"h": 6
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/JumpParticles/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 23
+					},
+					"frame": {
+						"x": 165,
+						"y": 35,
+						"w": 40,
+						"h": 23
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/FallParticles/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 5,
+						"w": 64,
+						"h": 5
+					},
+					"frame": {
+						"x": 165,
+						"y": 60,
+						"w": 64,
+						"h": 5
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 13,
+						"w": 22,
+						"h": 22
+					},
+					"frame": {
+						"x": 207,
+						"y": 35,
+						"w": 22,
+						"h": 22
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 12,
+						"w": 27,
+						"h": 40
+					},
+					"frame": {
+						"x": 218,
+						"y": 67,
+						"w": 27,
+						"h": 40
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/JumpParticles/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 8,
+						"w": 24,
+						"h": 20
+					},
+					"frame": {
+						"x": 231,
+						"y": 35,
+						"w": 24,
+						"h": 20
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Env/grass.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 165,
+						"y": 1,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Objects/Orbs/0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 30,
+						"h": 32
+					},
+					"frame": {
+						"x": 199,
+						"y": 1,
+						"w": 30,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Bomb/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 63,
+						"h": 41
+					},
+					"frame": {
+						"x": 191,
+						"y": 226,
+						"w": 63,
+						"h": 41
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 2,
+						"w": 42,
+						"h": 60
+					},
+					"frame": {
+						"x": 191,
+						"y": 269,
+						"w": 42,
+						"h": 60
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 23,
+						"w": 19,
+						"h": 18
+					},
+					"frame": {
+						"x": 235,
+						"y": 269,
+						"w": 19,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 7,
+						"w": 50,
+						"h": 50
+					},
+					"frame": {
+						"x": 133,
+						"y": 285,
+						"w": 50,
+						"h": 50
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 8,
+						"w": 49,
+						"h": 47
+					},
+					"frame": {
+						"x": 185,
+						"y": 331,
+						"w": 49,
+						"h": 47
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 9,
+						"w": 46,
+						"h": 46
+					},
+					"frame": {
+						"x": 1,
+						"y": 293,
+						"w": 46,
+						"h": 46
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 47,
+						"h": 44
+					},
+					"frame": {
+						"x": 49,
+						"y": 293,
+						"w": 47,
+						"h": 44
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Objects/Orbs/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 30,
+						"h": 32
+					},
+					"frame": {
+						"x": 98,
+						"y": 293,
+						"w": 30,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Objects/Orbs/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 30,
+						"h": 32
+					},
+					"frame": {
+						"x": 98,
+						"y": 327,
+						"w": 30,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 45,
+						"h": 44
+					},
+					"frame": {
+						"x": 49,
+						"y": 339,
+						"w": 45,
+						"h": 44
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 46,
+						"h": 43
+					},
+					"frame": {
+						"x": 1,
+						"y": 341,
+						"w": 46,
+						"h": 43
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Bomb/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 23,
+						"w": 52,
+						"h": 38
+					},
+					"frame": {
+						"x": 130,
+						"y": 337,
+						"w": 52,
+						"h": 38
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Objects/Orbs/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 30,
+						"h": 32
+					},
+					"frame": {
+						"x": 96,
+						"y": 361,
+						"w": 30,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Shine/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 11,
+						"w": 41,
+						"h": 42
+					},
+					"frame": {
+						"x": 49,
+						"y": 385,
+						"w": 41,
+						"h": 42
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 46,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 386,
+						"w": 46,
+						"h": 42
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 4,
+						"w": 41,
+						"h": 40
+					},
+					"frame": {
+						"x": 128,
+						"y": 377,
+						"w": 41,
+						"h": 40
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/JumpParticles/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 92,
+						"y": 395,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/JumpParticles/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 92,
+						"y": 395,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Burst/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 13,
+						"w": 39,
+						"h": 37
+					},
+					"frame": {
+						"x": 171,
+						"y": 380,
+						"w": 39,
+						"h": 37
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Smoke/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 11,
+						"w": 26,
+						"h": 26
+					},
+					"frame": {
+						"x": 212,
+						"y": 380,
+						"w": 26,
+						"h": 26
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/Bomb/0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 39,
+						"w": 26,
+						"h": 25
+					},
+					"frame": {
+						"x": 212,
+						"y": 408,
+						"w": 26,
+						"h": 25
+					}
+				},
+				{
+					"filename": "Uniball-Redux/Effects/FallParticles/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 3
+					},
+					"frame": {
+						"x": 126,
+						"y": 419,
+						"w": 80,
+						"h": 3
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:381ab9b94d173757fef4729e59c18aec:a7712f1d7ce32a05b6f0fb9ceb0d7028:8c1e21239f82a3af79b7d9a5a1f1240b$"
+	}
+}

@@ -4,8 +4,8 @@
 			"image": "objects.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 254,
-				"h": 1272
+				"w": 1281,
+				"h": 255
 			},
 			"scale": 1,
 			"frames": [
@@ -31,2022 +31,6 @@
 					}
 				},
 				{
-					"filename": "Other/Table.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 80,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 80,
-						"h": 32
-					},
-					"frame": {
-						"x": 173,
-						"y": 1,
-						"w": 80,
-						"h": 32
-					}
-				},
-				{
-					"filename": "FallParticles/5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 80,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 80,
-						"h": 6
-					},
-					"frame": {
-						"x": 173,
-						"y": 35,
-						"w": 80,
-						"h": 6
-					}
-				},
-				{
-					"filename": "FallParticles/6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 80,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 80,
-						"h": 3
-					},
-					"frame": {
-						"x": 173,
-						"y": 43,
-						"w": 80,
-						"h": 3
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/7.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 8,
-						"y": 1,
-						"w": 79,
-						"h": 72
-					},
-					"frame": {
-						"x": 173,
-						"y": 48,
-						"w": 79,
-						"h": 72
-					}
-				},
-				{
-					"filename": "Door/1-Closed/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 122,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "Door/3-Closing/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 122,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "Door/3-Closing/5.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 122,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "WindowLight/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 170,
-						"h": 139
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 170,
-						"h": 139
-					},
-					"frame": {
-						"x": 1,
-						"y": 142,
-						"w": 170,
-						"h": 139
-					}
-				},
-				{
-					"filename": "Door/2-Opening/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 220,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "WindowLight/3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 170,
-						"h": 139
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 170,
-						"h": 139
-					},
-					"frame": {
-						"x": 1,
-						"y": 283,
-						"w": 170,
-						"h": 139
-					}
-				},
-				{
-					"filename": "Door/2-Opening/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 318,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "Door/2-Opening/5.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 318,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "Door/3-Closing/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 416,
-						"w": 78,
-						"h": 96
-					}
-				},
-				{
-					"filename": "WindowLight/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 170,
-						"h": 139
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 170,
-						"h": 139
-					},
-					"frame": {
-						"x": 1,
-						"y": 424,
-						"w": 170,
-						"h": 139
-					}
-				},
-				{
-					"filename": "FallParticles/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 80,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 78,
-						"h": 7
-					},
-					"frame": {
-						"x": 173,
-						"y": 514,
-						"w": 78,
-						"h": 7
-					}
-				},
-				{
-					"filename": "Door/2-Opening/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 77,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 523,
-						"w": 77,
-						"h": 96
-					}
-				},
-				{
-					"filename": "Door/2-Opening/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 77,
-						"h": 96
-					},
-					"frame": {
-						"x": 173,
-						"y": 523,
-						"w": 77,
-						"h": 96
-					}
-				},
-				{
-					"filename": "HealthBar/Health Bar.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 154,
-						"h": 62
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 154,
-						"h": 62
-					},
-					"frame": {
-						"x": 1,
-						"y": 565,
-						"w": 154,
-						"h": 62
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 10,
-						"w": 96,
-						"h": 98
-					},
-					"frame": {
-						"x": 157,
-						"y": 621,
-						"w": 96,
-						"h": 98
-					}
-				},
-				{
-					"filename": "Candle/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 157,
-						"y": 565,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "Candle/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 157,
-						"y": 565,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "RunParticles/2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 3,
-						"w": 9,
-						"h": 7
-					},
-					"frame": {
-						"x": 157,
-						"y": 599,
-						"w": 9,
-						"h": 7
-					}
-				},
-				{
-					"filename": "RunParticles/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 3,
-						"w": 9,
-						"h": 7
-					},
-					"frame": {
-						"x": 157,
-						"y": 599,
-						"w": 9,
-						"h": 7
-					}
-				},
-				{
-					"filename": "RunParticles/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 2,
-						"w": 7,
-						"h": 7
-					},
-					"frame": {
-						"x": 157,
-						"y": 608,
-						"w": 7,
-						"h": 7
-					}
-				},
-				{
-					"filename": "RunParticles/5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 5,
-						"h": 6
-					},
-					"frame": {
-						"x": 166,
-						"y": 608,
-						"w": 5,
-						"h": 6
-					}
-				},
-				{
-					"filename": "RunParticles/6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 5,
-						"h": 3
-					},
-					"frame": {
-						"x": 166,
-						"y": 616,
-						"w": 5,
-						"h": 3
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 16,
-						"w": 90,
-						"h": 91
-					},
-					"frame": {
-						"x": 1,
-						"y": 629,
-						"w": 90,
-						"h": 91
-					}
-				},
-				{
-					"filename": "CandleLight/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 60,
-						"h": 58
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 60,
-						"h": 58
-					},
-					"frame": {
-						"x": 93,
-						"y": 629,
-						"w": 60,
-						"h": 58
-					}
-				},
-				{
-					"filename": "CandleLight/5.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 60,
-						"h": 58
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 60,
-						"h": 58
-					},
-					"frame": {
-						"x": 93,
-						"y": 689,
-						"w": 60,
-						"h": 58
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 6,
-						"y": 20,
-						"w": 85,
-						"h": 85
-					},
-					"frame": {
-						"x": 1,
-						"y": 722,
-						"w": 85,
-						"h": 85
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/8.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 7,
-						"y": 0,
-						"w": 81,
-						"h": 69
-					},
-					"frame": {
-						"x": 155,
-						"y": 721,
-						"w": 81,
-						"h": 69
-					}
-				},
-				{
-					"filename": "FallParticles/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 80,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 8,
-						"y": 5,
-						"w": 64,
-						"h": 5
-					},
-					"frame": {
-						"x": 88,
-						"y": 749,
-						"w": 64,
-						"h": 5
-					}
-				},
-				{
-					"filename": "Candle/3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 238,
-						"y": 721,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "Candle/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 238,
-						"y": 755,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "Candle/5.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 238,
-						"y": 789,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "Candle/6.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 238,
-						"y": 789,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "CandleLight/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 60,
-						"h": 58
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 59,
-						"h": 58
-					},
-					"frame": {
-						"x": 88,
-						"y": 756,
-						"w": 59,
-						"h": 58
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/9.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 7,
-						"y": 0,
-						"w": 81,
-						"h": 65
-					},
-					"frame": {
-						"x": 1,
-						"y": 809,
-						"w": 81,
-						"h": 65
-					}
-				},
-				{
-					"filename": "Door/3-Closing/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 77,
-						"h": 96
-					},
-					"frame": {
-						"x": 149,
-						"y": 792,
-						"w": 77,
-						"h": 96
-					}
-				},
-				{
-					"filename": "Door/3-Closing/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 78,
-						"h": 96
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 77,
-						"h": 96
-					},
-					"frame": {
-						"x": 149,
-						"y": 792,
-						"w": 77,
-						"h": 96
-					}
-				},
-				{
-					"filename": "JumpParticles/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 40,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 8,
-						"y": 8,
-						"w": 24,
-						"h": 20
-					},
-					"frame": {
-						"x": 228,
-						"y": 823,
-						"w": 24,
-						"h": 20
-					}
-				},
-				{
-					"filename": "RunParticles/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 6,
-						"y": 5,
-						"w": 6,
-						"h": 5
-					},
-					"frame": {
-						"x": 228,
-						"y": 792,
-						"w": 6,
-						"h": 5
-					}
-				},
-				{
-					"filename": "HealthBar/Heart.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 22,
-						"h": 19
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 22,
-						"h": 19
-					},
-					"frame": {
-						"x": 228,
-						"y": 845,
-						"w": 22,
-						"h": 19
-					}
-				},
-				{
-					"filename": "CandleLight/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 60,
-						"h": 58
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 59,
-						"h": 58
-					},
-					"frame": {
-						"x": 84,
-						"y": 816,
-						"w": 59,
-						"h": 58
-					}
-				},
-				{
-					"filename": "ExclamationDialog/1-Opening/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 228,
-						"y": 866,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "ExclamationDialog/1-Opening/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 228,
-						"y": 866,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 11,
-						"y": 25,
-						"w": 76,
-						"h": 76
-					},
-					"frame": {
-						"x": 1,
-						"y": 876,
-						"w": 76,
-						"h": 76
-					}
-				},
-				{
-					"filename": "CandleLight/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 60,
-						"h": 58
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 59,
-						"h": 58
-					},
-					"frame": {
-						"x": 79,
-						"y": 876,
-						"w": 59,
-						"h": 58
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 9,
-						"y": 2,
-						"w": 76,
-						"h": 76
-					},
-					"frame": {
-						"x": 140,
-						"y": 890,
-						"w": 76,
-						"h": 76
-					}
-				},
-				{
-					"filename": "BombBar/0.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 39,
-						"h": 9
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 1,
-						"w": 35,
-						"h": 7
-					},
-					"frame": {
-						"x": 218,
-						"y": 890,
-						"w": 35,
-						"h": 7
-					}
-				},
-				{
-					"filename": "Other/Windows.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 58,
-						"h": 61
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 58,
-						"h": 61
-					},
-					"frame": {
-						"x": 79,
-						"y": 936,
-						"w": 58,
-						"h": 61
-					}
-				},
-				{
-					"filename": "Bomb/3-Explotion/5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 10,
-						"y": 6,
-						"w": 75,
-						"h": 77
-					},
-					"frame": {
-						"x": 1,
-						"y": 954,
-						"w": 75,
-						"h": 77
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/8.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 32,
-						"y": 39,
-						"w": 34,
-						"h": 50
-					},
-					"frame": {
-						"x": 218,
-						"y": 899,
-						"w": 34,
-						"h": 50
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/9.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 32,
-						"y": 40,
-						"w": 34,
-						"h": 49
-					},
-					"frame": {
-						"x": 218,
-						"y": 951,
-						"w": 34,
-						"h": 49
-					}
-				},
-				{
-					"filename": "FallParticles/2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 80,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 3,
-						"w": 72,
-						"h": 7
-					},
-					"frame": {
-						"x": 139,
-						"y": 968,
-						"w": 72,
-						"h": 7
-					}
-				},
-				{
-					"filename": "FallParticles/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 80,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 3,
-						"w": 72,
-						"h": 7
-					},
-					"frame": {
-						"x": 139,
-						"y": 968,
-						"w": 72,
-						"h": 7
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 54,
-						"h": 46
-					},
-					"frame": {
-						"x": 139,
-						"y": 977,
-						"w": 54,
-						"h": 46
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/7.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 54,
-						"h": 46
-					},
-					"frame": {
-						"x": 139,
-						"y": 977,
-						"w": 54,
-						"h": 46
-					}
-				},
-				{
-					"filename": "ExclamationDialog/1-Opening/3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 195,
-						"y": 977,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "InterrogateDialog/1-Opening/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 195,
-						"y": 1001,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "InterrogateDialog/1-Opening/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 195,
-						"y": 1001,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/7.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 32,
-						"y": 41,
-						"w": 34,
-						"h": 48
-					},
-					"frame": {
-						"x": 217,
-						"y": 1002,
-						"w": 34,
-						"h": 48
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/8.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 1,
-						"w": 54,
-						"h": 45
-					},
-					"frame": {
-						"x": 78,
-						"y": 999,
-						"w": 54,
-						"h": 45
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 10,
-						"y": 0,
-						"w": 52,
-						"h": 46
-					},
-					"frame": {
-						"x": 1,
-						"y": 1033,
-						"w": 52,
-						"h": 46
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 10,
-						"y": 0,
-						"w": 52,
-						"h": 46
-					},
-					"frame": {
-						"x": 1,
-						"y": 1033,
-						"w": 52,
-						"h": 46
-					}
-				},
-				{
-					"filename": "InterrogateDialog/1-Opening/3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 55,
-						"y": 1033,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/9.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 2,
-						"w": 52,
-						"h": 44
-					},
-					"frame": {
-						"x": 134,
-						"y": 1025,
-						"w": 52,
-						"h": 44
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 7,
-						"y": 0,
-						"w": 51,
-						"h": 46
-					},
-					"frame": {
-						"x": 77,
-						"y": 1046,
-						"w": 51,
-						"h": 46
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/10.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/11.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/12.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/13.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/14.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/15.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/16.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/5.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/6.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/7.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/8.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/9.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1057,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/17.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 55,
-						"y": 1077,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 10,
-						"y": 0,
-						"w": 51,
-						"h": 46
-					},
-					"frame": {
-						"x": 1,
-						"y": 1081,
-						"w": 51,
-						"h": 46
-					}
-				},
-				{
-					"filename": "EnemyCannon/2-Attack/5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 10,
-						"y": 0,
-						"w": 51,
-						"h": 46
-					},
-					"frame": {
-						"x": 1,
-						"y": 1081,
-						"w": 51,
-						"h": 46
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/18.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 188,
-						"y": 1025,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/19.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 188,
-						"y": 1045,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Other/Barrel.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 42,
-						"h": 44
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 42,
-						"h": 44
-					},
-					"frame": {
-						"x": 210,
-						"y": 1052,
-						"w": 42,
-						"h": 44
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/20.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 188,
-						"y": 1065,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "EnemyCannon/1-Idle/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 62,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 5,
-						"y": 1,
-						"w": 51,
-						"h": 45
-					},
-					"frame": {
-						"x": 130,
-						"y": 1071,
-						"w": 51,
-						"h": 45
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/21.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 183,
-						"y": 1085,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "JumpParticles/5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 40,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 40,
-						"h": 26
-					},
-					"frame": {
-						"x": 205,
-						"y": 1098,
-						"w": 40,
-						"h": 26
-					}
-				},
-				{
-					"filename": "Heart/1-Idle/22.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 183,
-						"y": 1105,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "JumpParticles/6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 40,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 40,
-						"h": 23
-					},
-					"frame": {
-						"x": 77,
-						"y": 1094,
-						"w": 40,
-						"h": 23
-					}
-				},
-				{
 					"filename": "BigChain/1.png",
 					"rotated": false,
 					"trimmed": false,
@@ -2061,8 +45,8 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 119,
-						"y": 1094,
+						"x": 1,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
@@ -2082,98 +66,14 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 119,
-						"y": 1094,
+						"x": 1,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
 				},
 				{
-					"filename": "Heart/2-Live+1/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 54,
-						"y": 1097,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Heart/2-Live+1/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 54,
-						"y": 1117,
-						"w": 20,
-						"h": 18
-					}
-				},
-				{
-					"filename": "BombBar/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 39,
-						"h": 9
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 39,
-						"h": 9
-					},
-					"frame": {
-						"x": 76,
-						"y": 1119,
-						"w": 39,
-						"h": 9
-					}
-				},
-				{
-					"filename": "BombBar/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 39,
-						"h": 9
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 39,
-						"h": 9
-					},
-					"frame": {
-						"x": 76,
-						"y": 1130,
-						"w": 39,
-						"h": 9
-					}
-				},
-				{
-					"filename": "BombBar/3.png",
+					"filename": "BombBar/1-Charging Bar/10.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -2188,387 +88,9 @@
 					},
 					"frame": {
 						"x": 1,
-						"y": 1129,
+						"y": 244,
 						"w": 39,
 						"h": 9
-					}
-				},
-				{
-					"filename": "Other/Chair.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 32,
-						"h": 56
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 32,
-						"h": 56
-					},
-					"frame": {
-						"x": 42,
-						"y": 1137,
-						"w": 32,
-						"h": 56
-					}
-				},
-				{
-					"filename": "BombBar/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 39,
-						"h": 9
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 39,
-						"h": 9
-					},
-					"frame": {
-						"x": 1,
-						"y": 1140,
-						"w": 39,
-						"h": 9
-					}
-				},
-				{
-					"filename": "JumpParticles/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 40,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 38,
-						"h": 26
-					},
-					"frame": {
-						"x": 1,
-						"y": 1151,
-						"w": 38,
-						"h": 26
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 36,
-						"w": 32,
-						"h": 53
-					},
-					"frame": {
-						"x": 1,
-						"y": 1179,
-						"w": 32,
-						"h": 53
-					}
-				},
-				{
-					"filename": "Candle/7.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 1,
-						"y": 1234,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "Candle/8.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 32
-					},
-					"frame": {
-						"x": 17,
-						"y": 1234,
-						"w": 14,
-						"h": 32
-					}
-				},
-				{
-					"filename": "Other/Red Bottle.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 31
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 31
-					},
-					"frame": {
-						"x": 33,
-						"y": 1234,
-						"w": 16,
-						"h": 31
-					}
-				},
-				{
-					"filename": "EnemyCannon/3-Cannon Ball/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 30,
-						"h": 30
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 30,
-						"h": 30
-					},
-					"frame": {
-						"x": 35,
-						"y": 1196,
-						"w": 30,
-						"h": 30
-					}
-				},
-				{
-					"filename": "Bomb/1-Bomb Off/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 50,
-						"w": 32,
-						"h": 39
-					},
-					"frame": {
-						"x": 51,
-						"y": 1228,
-						"w": 32,
-						"h": 39
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 38,
-						"w": 32,
-						"h": 51
-					},
-					"frame": {
-						"x": 85,
-						"y": 1141,
-						"w": 32,
-						"h": 51
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/10.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 38,
-						"w": 32,
-						"h": 51
-					},
-					"frame": {
-						"x": 85,
-						"y": 1141,
-						"w": 32,
-						"h": 51
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/6.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 40,
-						"w": 32,
-						"h": 49
-					},
-					"frame": {
-						"x": 85,
-						"y": 1194,
-						"w": 32,
-						"h": 49
-					}
-				},
-				{
-					"filename": "Other/Blue Bottle.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 21
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 21
-					},
-					"frame": {
-						"x": 67,
-						"y": 1195,
-						"w": 16,
-						"h": 21
-					}
-				},
-				{
-					"filename": "JumpParticles/2.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 40,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 3,
-						"w": 32,
-						"h": 25
-					},
-					"frame": {
-						"x": 85,
-						"y": 1245,
-						"w": 32,
-						"h": 25
-					}
-				},
-				{
-					"filename": "JumpParticles/3.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 40,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 4,
-						"y": 3,
-						"w": 32,
-						"h": 25
-					},
-					"frame": {
-						"x": 85,
-						"y": 1245,
-						"w": 32,
-						"h": 25
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/5.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 42,
-						"w": 32,
-						"h": 47
-					},
-					"frame": {
-						"x": 130,
-						"y": 1118,
-						"w": 32,
-						"h": 47
-					}
-				},
-				{
-					"filename": "Other/Green Bottle.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 24
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 14,
-						"h": 24
-					},
-					"frame": {
-						"x": 164,
-						"y": 1118,
-						"w": 14,
-						"h": 24
-					}
-				},
-				{
-					"filename": "Heart/2-Live+1/3.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 180,
-						"y": 1125,
-						"w": 20,
-						"h": 18
 					}
 				},
 				{
@@ -2586,52 +108,10 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 130,
-						"y": 1167,
+						"x": 12,
+						"y": 142,
 						"w": 9,
 						"h": 100
-					}
-				},
-				{
-					"filename": "SmallChain/1.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 9,
-						"h": 52
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 9,
-						"h": 52
-					},
-					"frame": {
-						"x": 119,
-						"y": 1196,
-						"w": 9,
-						"h": 52
-					}
-				},
-				{
-					"filename": "SmallChain/2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 9,
-						"h": 52
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 9,
-						"h": 52
-					},
-					"frame": {
-						"x": 119,
-						"y": 1196,
-						"w": 9,
-						"h": 52
 					}
 				},
 				{
@@ -2649,8 +129,8 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 141,
-						"y": 1167,
+						"x": 23,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
@@ -2670,8 +150,8 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 141,
-						"y": 1167,
+						"x": 23,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
@@ -2691,8 +171,8 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 152,
-						"y": 1167,
+						"x": 34,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
@@ -2712,10 +192,73 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 152,
-						"y": 1167,
+						"x": 34,
+						"y": 142,
 						"w": 9,
 						"h": 100
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/11.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 42,
+						"y": 244,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "BombBar/2-Full (Intermitent)/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 42,
+						"y": 244,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "BombBar/2-Full (Intermitent)/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 42,
+						"y": 244,
+						"w": 39,
+						"h": 9
 					}
 				},
 				{
@@ -2733,8 +276,8 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 163,
-						"y": 1167,
+						"x": 45,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
@@ -2754,31 +297,10 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 163,
-						"y": 1167,
+						"x": 45,
+						"y": 142,
 						"w": 9,
 						"h": 100
-					}
-				},
-				{
-					"filename": "Heart/2-Live+1/4.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 18
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 18
-					},
-					"frame": {
-						"x": 164,
-						"y": 1145,
-						"w": 20,
-						"h": 18
 					}
 				},
 				{
@@ -2796,14 +318,14 @@
 						"h": 100
 					},
 					"frame": {
-						"x": 174,
-						"y": 1165,
+						"x": 56,
+						"y": 142,
 						"w": 9,
 						"h": 100
 					}
 				},
 				{
-					"filename": "Bomb/2-Bomb On/3.png",
+					"filename": "Bomb/3-Explotion/4.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -2811,16 +333,1171 @@
 						"h": 108
 					},
 					"spriteSourceSize": {
-						"x": 33,
-						"y": 43,
-						"w": 32,
-						"h": 46
+						"x": 0,
+						"y": 10,
+						"w": 96,
+						"h": 98
 					},
 					"frame": {
-						"x": 202,
-						"y": 1126,
-						"w": 32,
-						"h": 46
+						"x": 67,
+						"y": 142,
+						"w": 96,
+						"h": 98
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 83,
+						"y": 242,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 124,
+						"y": 242,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "Door/1-Closed/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 165,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "Door/3-Closing/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 165,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "Door/3-Closing/5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 165,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "WindowLight/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 139
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 139
+					},
+					"frame": {
+						"x": 173,
+						"y": 1,
+						"w": 170,
+						"h": 139
+					}
+				},
+				{
+					"filename": "Other/Skull.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 14
+					},
+					"frame": {
+						"x": 165,
+						"y": 240,
+						"w": 19,
+						"h": 14
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 186,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "FallParticles/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 3
+					},
+					"frame": {
+						"x": 186,
+						"y": 251,
+						"w": 80,
+						"h": 3
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 227,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "Door/2-Opening/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 245,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 268,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "RunParticles/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 3
+					},
+					"frame": {
+						"x": 268,
+						"y": 251,
+						"w": 5,
+						"h": 3
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 309,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "Door/2-Opening/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 325,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "Door/2-Opening/5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 325,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "WindowLight/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 139
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 139
+					},
+					"frame": {
+						"x": 345,
+						"y": 1,
+						"w": 170,
+						"h": 139
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 350,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 391,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "Door/3-Closing/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 96
+					},
+					"frame": {
+						"x": 405,
+						"y": 142,
+						"w": 78,
+						"h": 96
+					}
+				},
+				{
+					"filename": "BombBar/2-Full (Intermitent)/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 9
+					},
+					"frame": {
+						"x": 432,
+						"y": 240,
+						"w": 39,
+						"h": 9
+					}
+				},
+				{
+					"filename": "FallParticles/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 78,
+						"h": 7
+					},
+					"frame": {
+						"x": 473,
+						"y": 240,
+						"w": 78,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Door/2-Opening/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 96
+					},
+					"frame": {
+						"x": 485,
+						"y": 142,
+						"w": 77,
+						"h": 96
+					}
+				},
+				{
+					"filename": "Door/2-Opening/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 96
+					},
+					"frame": {
+						"x": 485,
+						"y": 142,
+						"w": 77,
+						"h": 96
+					}
+				},
+				{
+					"filename": "WindowLight/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 139
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 139
+					},
+					"frame": {
+						"x": 517,
+						"y": 1,
+						"w": 170,
+						"h": 139
+					}
+				},
+				{
+					"filename": "FallParticles/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 5,
+						"w": 64,
+						"h": 5
+					},
+					"frame": {
+						"x": 473,
+						"y": 249,
+						"w": 64,
+						"h": 5
+					}
+				},
+				{
+					"filename": "RunParticles/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 5,
+						"w": 6,
+						"h": 5
+					},
+					"frame": {
+						"x": 539,
+						"y": 249,
+						"w": 6,
+						"h": 5
+					}
+				},
+				{
+					"filename": "FallParticles/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 72,
+						"h": 7
+					},
+					"frame": {
+						"x": 553,
+						"y": 240,
+						"w": 72,
+						"h": 7
+					}
+				},
+				{
+					"filename": "FallParticles/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 72,
+						"h": 7
+					},
+					"frame": {
+						"x": 553,
+						"y": 240,
+						"w": 72,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Door/3-Closing/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 77,
+						"h": 96
+					},
+					"frame": {
+						"x": 564,
+						"y": 142,
+						"w": 77,
+						"h": 96
+					}
+				},
+				{
+					"filename": "Door/3-Closing/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 78,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 77,
+						"h": 96
+					},
+					"frame": {
+						"x": 564,
+						"y": 142,
+						"w": 77,
+						"h": 96
+					}
+				},
+				{
+					"filename": "BombBar/1-Charging Bar/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 35,
+						"h": 7
+					},
+					"frame": {
+						"x": 627,
+						"y": 240,
+						"w": 35,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 16,
+						"w": 90,
+						"h": 91
+					},
+					"frame": {
+						"x": 643,
+						"y": 142,
+						"w": 90,
+						"h": 91
+					}
+				},
+				{
+					"filename": "HealthBar/Heart.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 19
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 19
+					},
+					"frame": {
+						"x": 664,
+						"y": 235,
+						"w": 22,
+						"h": 19
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/10.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/11.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/12.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/13.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/14.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/15.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/16.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/9.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 688,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/17.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 710,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/18.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 732,
+						"y": 235,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 20,
+						"w": 85,
+						"h": 85
+					},
+					"frame": {
+						"x": 689,
+						"y": 1,
+						"w": 85,
+						"h": 85
+					}
+				},
+				{
+					"filename": "SmallChain/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 52
+					},
+					"frame": {
+						"x": 689,
+						"y": 88,
+						"w": 9,
+						"h": 52
+					}
+				},
+				{
+					"filename": "SmallChain/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 52
+					},
+					"frame": {
+						"x": 689,
+						"y": 88,
+						"w": 9,
+						"h": 52
 					}
 				},
 				{
@@ -2838,8 +1515,8 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 186,
-						"y": 1145,
+						"x": 700,
+						"y": 88,
 						"w": 9,
 						"h": 52
 					}
@@ -2859,8 +1536,8 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 236,
-						"y": 1126,
+						"x": 711,
+						"y": 88,
 						"w": 9,
 						"h": 52
 					}
@@ -2880,31 +1557,10 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 236,
-						"y": 1126,
+						"x": 711,
+						"y": 88,
 						"w": 9,
 						"h": 52
-					}
-				},
-				{
-					"filename": "Bomb/2-Bomb On/4.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 96,
-						"h": 108
-					},
-					"spriteSourceSize": {
-						"x": 33,
-						"y": 44,
-						"w": 32,
-						"h": 45
-					},
-					"frame": {
-						"x": 197,
-						"y": 1174,
-						"w": 32,
-						"h": 45
 					}
 				},
 				{
@@ -2922,8 +1578,8 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 185,
-						"y": 1199,
+						"x": 722,
+						"y": 88,
 						"w": 9,
 						"h": 52
 					}
@@ -2943,115 +1599,10 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 185,
-						"y": 1199,
+						"x": 722,
+						"y": 88,
 						"w": 9,
 						"h": 52
-					}
-				},
-				{
-					"filename": "ExclamationDialog/1-Opening/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 18,
-						"h": 18
-					},
-					"frame": {
-						"x": 185,
-						"y": 1253,
-						"w": 18,
-						"h": 18
-					}
-				},
-				{
-					"filename": "ExclamationDialog/2-Closing/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 18,
-						"h": 18
-					},
-					"frame": {
-						"x": 185,
-						"y": 1253,
-						"w": 18,
-						"h": 18
-					}
-				},
-				{
-					"filename": "Other/Skull.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 19,
-						"h": 14
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 19,
-						"h": 14
-					},
-					"frame": {
-						"x": 231,
-						"y": 1180,
-						"w": 19,
-						"h": 14
-					}
-				},
-				{
-					"filename": "InterrogateDialog/1-Opening/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 18,
-						"h": 18
-					},
-					"frame": {
-						"x": 231,
-						"y": 1196,
-						"w": 18,
-						"h": 18
-					}
-				},
-				{
-					"filename": "InterrogateDialog/2-Closing/1.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 22
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 18,
-						"h": 18
-					},
-					"frame": {
-						"x": 231,
-						"y": 1196,
-						"w": 18,
-						"h": 18
 					}
 				},
 				{
@@ -3069,8 +1620,8 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 231,
-						"y": 1216,
+						"x": 733,
+						"y": 88,
 						"w": 9,
 						"h": 52
 					}
@@ -3090,10 +1641,31 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 231,
-						"y": 1216,
+						"x": 733,
+						"y": 88,
 						"w": 9,
 						"h": 52
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 6,
+						"w": 75,
+						"h": 77
+					},
+					"frame": {
+						"x": 735,
+						"y": 142,
+						"w": 75,
+						"h": 77
 					}
 				},
 				{
@@ -3111,10 +1683,1648 @@
 						"h": 52
 					},
 					"frame": {
-						"x": 242,
-						"y": 1216,
+						"x": 744,
+						"y": 88,
 						"w": 9,
 						"h": 52
+					}
+				},
+				{
+					"filename": "Other/Table.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 32
+					},
+					"frame": {
+						"x": 754,
+						"y": 221,
+						"w": 80,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 38,
+						"w": 32,
+						"h": 51
+					},
+					"frame": {
+						"x": 755,
+						"y": 88,
+						"w": 32,
+						"h": 51
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 38,
+						"w": 32,
+						"h": 51
+					},
+					"frame": {
+						"x": 755,
+						"y": 88,
+						"w": 32,
+						"h": 51
+					}
+				},
+				{
+					"filename": "RunParticles/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 3,
+						"w": 9,
+						"h": 7
+					},
+					"frame": {
+						"x": 735,
+						"y": 221,
+						"w": 9,
+						"h": 7
+					}
+				},
+				{
+					"filename": "RunParticles/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 3,
+						"w": 9,
+						"h": 7
+					},
+					"frame": {
+						"x": 735,
+						"y": 221,
+						"w": 9,
+						"h": 7
+					}
+				},
+				{
+					"filename": "RunParticles/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 6
+					},
+					"frame": {
+						"x": 746,
+						"y": 221,
+						"w": 5,
+						"h": 6
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 25,
+						"w": 76,
+						"h": 76
+					},
+					"frame": {
+						"x": 776,
+						"y": 1,
+						"w": 76,
+						"h": 76
+					}
+				},
+				{
+					"filename": "Other/Windows.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 58,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 58,
+						"h": 61
+					},
+					"frame": {
+						"x": 789,
+						"y": 79,
+						"w": 58,
+						"h": 61
+					}
+				},
+				{
+					"filename": "RunParticles/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 7,
+						"h": 7
+					},
+					"frame": {
+						"x": 776,
+						"y": 79,
+						"w": 7,
+						"h": 7
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 2,
+						"w": 76,
+						"h": 76
+					},
+					"frame": {
+						"x": 812,
+						"y": 142,
+						"w": 76,
+						"h": 76
+					}
+				},
+				{
+					"filename": "Candle/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 836,
+						"y": 220,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Candle/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 836,
+						"y": 220,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Candle/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 852,
+						"y": 220,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Candle/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 868,
+						"y": 220,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Candle/5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 884,
+						"y": 220,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Candle/6.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 884,
+						"y": 220,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "CandleLight/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 58
+					},
+					"frame": {
+						"x": 849,
+						"y": 79,
+						"w": 60,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 1,
+						"w": 79,
+						"h": 72
+					},
+					"frame": {
+						"x": 854,
+						"y": 1,
+						"w": 79,
+						"h": 72
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 0,
+						"w": 81,
+						"h": 69
+					},
+					"frame": {
+						"x": 890,
+						"y": 139,
+						"w": 81,
+						"h": 69
+					}
+				},
+				{
+					"filename": "HealthBar/Health Bar.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 154,
+						"h": 62
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 154,
+						"h": 62
+					},
+					"frame": {
+						"x": 911,
+						"y": 75,
+						"w": 154,
+						"h": 62
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 2,
+						"w": 52,
+						"h": 44
+					},
+					"frame": {
+						"x": 900,
+						"y": 210,
+						"w": 52,
+						"h": 44
+					}
+				},
+				{
+					"filename": "Other/Barrel.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 42,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 42,
+						"h": 44
+					},
+					"frame": {
+						"x": 954,
+						"y": 210,
+						"w": 42,
+						"h": 44
+					}
+				},
+				{
+					"filename": "Bomb/3-Explotion/9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 0,
+						"w": 81,
+						"h": 65
+					},
+					"frame": {
+						"x": 973,
+						"y": 139,
+						"w": 81,
+						"h": 65
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 32,
+						"y": 41,
+						"w": 34,
+						"h": 48
+					},
+					"frame": {
+						"x": 998,
+						"y": 206,
+						"w": 34,
+						"h": 48
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 42,
+						"w": 32,
+						"h": 47
+					},
+					"frame": {
+						"x": 1034,
+						"y": 206,
+						"w": 32,
+						"h": 47
+					}
+				},
+				{
+					"filename": "CandleLight/5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 58
+					},
+					"frame": {
+						"x": 1056,
+						"y": 139,
+						"w": 60,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 36,
+						"w": 32,
+						"h": 53
+					},
+					"frame": {
+						"x": 1068,
+						"y": 199,
+						"w": 32,
+						"h": 53
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 32,
+						"y": 39,
+						"w": 34,
+						"h": 50
+					},
+					"frame": {
+						"x": 1102,
+						"y": 199,
+						"w": 34,
+						"h": 50
+					}
+				},
+				{
+					"filename": "CandleLight/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 60,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 59,
+						"h": 58
+					},
+					"frame": {
+						"x": 935,
+						"y": 1,
+						"w": 59,
+						"h": 58
+					}
+				},
+				{
+					"filename": "BombBar/3-Closing/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 39,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 1,
+						"w": 33,
+						"h": 7
+					},
+					"frame": {
+						"x": 935,
+						"y": 61,
+						"w": 33,
+						"h": 7
+					}
+				},
+				{
+					"filename": "FallParticles/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 80,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 6
+					},
+					"frame": {
+						"x": 970,
+						"y": 61,
+						"w": 80,
+						"h": 6
+					}
+				},
+				{
+					"filename": "CandleLight/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 60,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 59,
+						"h": 58
+					},
+					"frame": {
+						"x": 996,
+						"y": 1,
+						"w": 59,
+						"h": 58
+					}
+				},
+				{
+					"filename": "CandleLight/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 60,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 59,
+						"h": 58
+					},
+					"frame": {
+						"x": 1057,
+						"y": 1,
+						"w": 59,
+						"h": 58
+					}
+				},
+				{
+					"filename": "Other/Chair.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 56
+					},
+					"frame": {
+						"x": 1067,
+						"y": 61,
+						"w": 32,
+						"h": 56
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/19.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1067,
+						"y": 119,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/20.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1089,
+						"y": 119,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 32,
+						"y": 40,
+						"w": 34,
+						"h": 49
+					},
+					"frame": {
+						"x": 1101,
+						"y": 61,
+						"w": 34,
+						"h": 49
+					}
+				},
+				{
+					"filename": "JumpParticles/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 1111,
+						"y": 112,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "JumpParticles/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 1111,
+						"y": 112,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 40,
+						"w": 32,
+						"h": 49
+					},
+					"frame": {
+						"x": 1118,
+						"y": 1,
+						"w": 32,
+						"h": 49
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 46
+					},
+					"frame": {
+						"x": 1137,
+						"y": 52,
+						"w": 54,
+						"h": 46
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 46
+					},
+					"frame": {
+						"x": 1137,
+						"y": 52,
+						"w": 54,
+						"h": 46
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 0,
+						"w": 52,
+						"h": 46
+					},
+					"frame": {
+						"x": 1152,
+						"y": 1,
+						"w": 52,
+						"h": 46
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 0,
+						"w": 52,
+						"h": 46
+					},
+					"frame": {
+						"x": 1152,
+						"y": 1,
+						"w": 52,
+						"h": 46
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 0,
+						"w": 51,
+						"h": 46
+					},
+					"frame": {
+						"x": 1118,
+						"y": 139,
+						"w": 51,
+						"h": 46
+					}
+				},
+				{
+					"filename": "Candle/7.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 1145,
+						"y": 100,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "Candle/8.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 1161,
+						"y": 100,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 54,
+						"h": 45
+					},
+					"frame": {
+						"x": 1206,
+						"y": 1,
+						"w": 54,
+						"h": 45
+					}
+				},
+				{
+					"filename": "ExclamationDialog/1-Opening/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 1262,
+						"y": 1,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "ExclamationDialog/2-Closing/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 1262,
+						"y": 1,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "InterrogateDialog/1-Opening/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 1262,
+						"y": 21,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "InterrogateDialog/2-Closing/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 1262,
+						"y": 21,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Other/Red Bottle.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 31
+					},
+					"frame": {
+						"x": 1262,
+						"y": 41,
+						"w": 16,
+						"h": 31
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 0,
+						"w": 51,
+						"h": 46
+					},
+					"frame": {
+						"x": 1206,
+						"y": 48,
+						"w": 51,
+						"h": 46
+					}
+				},
+				{
+					"filename": "EnemyCannon/2-Attack/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 0,
+						"w": 51,
+						"h": 46
+					},
+					"frame": {
+						"x": 1206,
+						"y": 48,
+						"w": 51,
+						"h": 46
+					}
+				},
+				{
+					"filename": "ExclamationDialog/1-Opening/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 1259,
+						"y": 74,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "ExclamationDialog/1-Opening/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 1259,
+						"y": 74,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "EnemyCannon/1-Idle/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 1,
+						"w": 51,
+						"h": 45
+					},
+					"frame": {
+						"x": 1193,
+						"y": 96,
+						"w": 51,
+						"h": 45
+					}
+				},
+				{
+					"filename": "ExclamationDialog/1-Opening/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 1171,
+						"y": 134,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "Other/Green Bottle.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 24
+					},
+					"frame": {
+						"x": 1177,
+						"y": 100,
+						"w": 14,
+						"h": 24
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 43,
+						"w": 32,
+						"h": 46
+					},
+					"frame": {
+						"x": 1246,
+						"y": 98,
+						"w": 32,
+						"h": 46
+					}
+				},
+				{
+					"filename": "JumpParticles/5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 26
+					},
+					"frame": {
+						"x": 1193,
+						"y": 143,
+						"w": 40,
+						"h": 26
+					}
+				},
+				{
+					"filename": "InterrogateDialog/1-Opening/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 1171,
+						"y": 158,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "InterrogateDialog/1-Opening/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 1171,
+						"y": 158,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "JumpParticles/6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 23
+					},
+					"frame": {
+						"x": 1235,
+						"y": 146,
+						"w": 40,
+						"h": 23
+					}
+				},
+				{
+					"filename": "Bomb/2-Bomb On/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 44,
+						"w": 32,
+						"h": 45
+					},
+					"frame": {
+						"x": 1138,
+						"y": 187,
+						"w": 32,
+						"h": 45
+					}
+				},
+				{
+					"filename": "JumpParticles/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 8,
+						"w": 24,
+						"h": 20
+					},
+					"frame": {
+						"x": 1138,
+						"y": 234,
+						"w": 24,
+						"h": 20
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/21.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1164,
+						"y": 234,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Bomb/1-Bomb Off/1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 96,
+						"h": 108
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 50,
+						"w": 32,
+						"h": 39
+					},
+					"frame": {
+						"x": 1172,
+						"y": 182,
+						"w": 32,
+						"h": 39
+					}
+				},
+				{
+					"filename": "EnemyCannon/3-Cannon Ball/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 30,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 30,
+						"h": 30
+					},
+					"frame": {
+						"x": 1186,
+						"y": 223,
+						"w": 30,
+						"h": 30
+					}
+				},
+				{
+					"filename": "JumpParticles/4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 38,
+						"h": 26
+					},
+					"frame": {
+						"x": 1206,
+						"y": 171,
+						"w": 38,
+						"h": 26
+					}
+				},
+				{
+					"filename": "InterrogateDialog/1-Opening/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 1206,
+						"y": 199,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "Other/Blue Bottle.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 21
+					},
+					"frame": {
+						"x": 1218,
+						"y": 223,
+						"w": 16,
+						"h": 21
+					}
+				},
+				{
+					"filename": "Heart/1-Idle/22.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1228,
+						"y": 199,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/2-Live+1/1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1246,
+						"y": 171,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/2-Live+1/2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1250,
+						"y": 191,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/2-Live+1/3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1250,
+						"y": 211,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "Heart/2-Live+1/4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 1236,
+						"y": 231,
+						"w": 20,
+						"h": 18
 					}
 				}
 			]
@@ -3123,6 +3333,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:a32c02edf15a1fa6278d5e88b9e96a34:bc8ac2f93c9dc679ef139d16dc76fc9e:8d6d12ff4d5234f2a4b19e0a906dbf52$"
+		"smartupdate": "$TexturePacker:SmartUpdate:cc66f1bb43a2f7efc213f10bcb305bd4:d1ad429412db18391821848bc55bc453:8d6d12ff4d5234f2a4b19e0a906dbf52$"
 	}
 }
