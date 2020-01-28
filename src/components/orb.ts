@@ -35,6 +35,13 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
     private initSprite(): void {
         this.currentScene.physics.world.enable(this);
 
+        this.currentScene.add
+            .sprite(this.x, this.y, Constants.SHEET_KEY)
+            .play('pop')
+            .on('animationcomplete', function () {
+                this.destroy();
+            });
+
         this.setScale(this.scaledSize, this.scaledSize);
         this.body.setCircle(16, 0, 0);
         this.setMaxVelocity(this.maxVelocity, this.maxVelocity);
