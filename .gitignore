@@ -14,8 +14,4 @@ node_modules/
 .cache
 .github
 
-dist/game.*.js
-dist/game.*.js.map
-dist/index.html
-dist/index.js
-dist/index.js.map
+dist
