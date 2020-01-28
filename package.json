@@ -8,7 +8,10 @@
     "typescript": "^3.7.4"
   },
   "description": "",
-  "devDependencies": {},
+  "devDependencies": {
+    "tslint": "^6.0.0",
+    "typescript-tslint-plugin": "^0.5.5"
+  },
   "license": "MIT",
   "name": "uniball-redux",
   "scripts": {
