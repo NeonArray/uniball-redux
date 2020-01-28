@@ -1,11 +1,14 @@
 import 'phaser';
 import Player from '../components/player';
-import {OrbColor, Registry} from '../types';
+import {EventNames, OrbColor, Registry} from '../types';
 import Orb from '../components/orb';
+import {Constants} from '../constants';
 
 
 export default class MainScene extends Phaser.Scene {
     private player: Player;
+    private staminaBar;
+    private smoke;
     private currentColor: OrbColor = OrbColor.red;
     private groups;
 
