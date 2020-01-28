@@ -1,6 +1,6 @@
 import 'phaser';
 import { Constants } from '../constants';
-import { OrbColor, Registry } from '../types';
+import { OrbColor, Registry, EventNames } from '../types';
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
     private currentScene: Phaser.Scene;
