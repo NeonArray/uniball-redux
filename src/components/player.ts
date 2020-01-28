@@ -89,6 +89,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     public getStamina(): integer {
         return this.stamina;
     }
+
+    private hit(): void {
+        this.anims.stop();
+        const color = this.currentScene.registry.get(Registry.CurrentColor);
+        this.anims.play(`hit_${color}`, false);
+        this.reduceHealth();
+    }
+
     private initSprite(): void {
         this.currentScene.physics.world.enable(this);
         this.registerAnimations();
