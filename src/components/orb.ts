@@ -61,9 +61,9 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
 
         this.currentScene.anims.create({
             key: 'cycleColors',
-            frames: this.currentScene.anims.generateFrameNames('s_orbs', {
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 3,
-                prefix: 'orbs-',
+                prefix: 'Uniball-Redux/Objects/Orbs/',
                 suffix: '.png',
             }),
             frameRate: 1,
