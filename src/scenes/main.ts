@@ -225,6 +225,21 @@ export default class MainScene extends Phaser.Scene {
         this.groups.orbs.blue.getChildren().forEach((orb) => orb.update());
         this.groups.orbs.purple.getChildren().forEach((orb) => orb.update());
         this.groups.orbs.wild.getChildren().forEach((orb) => orb.update());
+
+    private checkWinCondition(): void {
+        if (
+            this.groups.orbs.red.getChildren().length === 0
+            && this.groups.orbs.green.getChildren().length === 0
+            && this.groups.orbs.purple.getChildren().length === 0
+            && this.groups.orbs.blue.getChildren().length === 0
+        ) {
+            this.groups.orbs.wild.destroy(true);
+            this.player.disableBody();
+            this.add.text(this.game.canvas.width / 2, this.game.canvas.height / 2, 'You done did the thing.', {
+                font: '24px Arial',
+                fill: '#fff',
+            }).setOrigin(0.5, 0.5);
+        }
     }
 
     private onWildOrbCollisionWithPlayer(player: Player, orb: Orb): void {
