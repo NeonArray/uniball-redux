@@ -1,5 +1,5 @@
 
-import main from './main';
+import main from "./main";
 // import debug from '../components/debug';
 // import hud from './hud';
 

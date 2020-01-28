@@ -1,6 +1,14 @@
-import 'phaser';
-import { Constants } from '../constants';
-import { OrbColor, Registry, EventNames } from '../types';
+import "phaser";
+import { Constants } from "../constants";
+import { IConstructorParams, OrbColor, Registry, EventNames } from "../types";
+
+interface IPlayerConstructorParams {
+    scene: Phaser.Scene;
+    x: integer;
+    y: integer;
+    key: string;
+    frame?: string;
+}
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
     private currentScene: Phaser.Scene;
@@ -11,8 +19,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     private staminaDelayTime: number;
     private stamina: integer = 4;
     private health: integer = 1;
-    
-    constructor(params) {
+
+    constructor(params: IPlayerConstructorParams) {
         super(params.scene, params.x, params.y, params.key, params.frame);
 
         this.currentScene = params.scene;
@@ -21,14 +29,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     public update(time: number): void {
-        const color = this.currentScene.registry.get('currentOrbColor');
+        const color: OrbColor = this.currentScene.registry.get("currentOrbColor");
 
         if (this.health <= 0) {
             this.die(color);
             return;
         }
 
-        if (this.inputKeys.get('LEFT').isDown) {
+        if (this.inputKeys.get("LEFT").isDown) {
             this.setFlipX(true);
             this.setVelocityX(Constants.P_MOVE_SPEED * -1);
 
@@ -38,7 +46,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
                 this.createRunningParticles(time);
             }
-        } else if (this.inputKeys.get('RIGHT').isDown) {
+        } else if (this.inputKeys.get("RIGHT").isDown) {
             this.setFlipX(false);
             this.setVelocityX(Constants.P_MOVE_SPEED);
 
@@ -54,7 +62,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         }
 
         if (
-            Phaser.Input.Keyboard.JustDown(this.inputKeys.get('UP'))
+            Phaser.Input.Keyboard.JustDown(this.inputKeys.get("UP"))
             && this.stamina > 0
         ) {
             this.anims.play(`jump_${color}`, true);
@@ -64,7 +72,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.reduceStamina();
         } else if (
             !this.body.touching.down
-            && Phaser.Input.Keyboard.JustDown(this.inputKeys.get('DOWN'))
+            && Phaser.Input.Keyboard.JustDown(this.inputKeys.get("DOWN"))
         ) {
             this.anims.play(`fall_${color}`);
             this.setVelocityY(Constants.P_SPIKE_SPEED);
@@ -92,7 +100,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     private hit(): void {
         this.anims.stop();
-        const color = this.currentScene.registry.get(Registry.CurrentColor);
+        const color: OrbColor = this.currentScene.registry.get(Registry.CurrentColor);
         this.anims.play(`hit_${color}`, false);
         this.reduceHealth();
     }
@@ -117,8 +125,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     private registerAnimations(): void {
-        const keyString = 's_peggie_';
-        
+        const keyString: string = "s_peggie_";
+
         for (let orbColorKey in OrbColor) {
 
             if (!OrbColor.hasOwnProperty(orbColorKey) || orbColorKey === OrbColor.wild) {
@@ -129,7 +137,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `idle_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 34,
-                    prefix: 'Idle/', suffix: '.png'
+                    prefix: "Idle/", suffix: ".png"
                 }),
                 frameRate: 25,
                 repeatDelay: 1500,
@@ -139,7 +147,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `run_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 14,
-                    prefix: 'Run/', suffix: '.png'
+                    prefix: "Run/", suffix: ".png"
                 }),
                 frameRate: 20,
                 repeat: -1,
@@ -148,7 +156,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `jump_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 4,
-                    prefix: 'Attack/', suffix: '.png'
+                    prefix: "Attack/", suffix: ".png"
                 }),
                 frameRate: 8,
                 repeat: 0,
@@ -157,7 +165,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `fall_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 2,
-                    prefix: 'Fall/', suffix: '.png'
+                    prefix: "Fall/", suffix: ".png"
                 }),
                 frameRate: 1,
                 repeat: 0,
@@ -166,7 +174,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `hit_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 8,
-                    prefix: 'Hit/', suffix: '.png'
+                    prefix: "Hit/", suffix: ".png"
                 }),
                 frameRate: 16,
                 repeat: 0,
@@ -175,7 +183,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 key: `dead_${orbColorKey}`,
                 frames: this.currentScene.anims.generateFrameNames(`${keyString}${orbColorKey}`, {
                     start: 1, end: 4,
-                    prefix: 'DeadGround/', suffix: '.png'
+                    prefix: "DeadGround/", suffix: ".png"
                 }),
                 frameRate: 4,
                 repeat: 2,
@@ -186,7 +194,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             key: `p_run`,
             frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 1, end: 6,
-                prefix: 'Uniball-Redux/Effects/RunParticles/', suffix: '.png'
+                prefix: "Uniball-Redux/Effects/RunParticles/", suffix: ".png"
             }),
             frameRate: 12,
             repeat: 0,
@@ -195,7 +203,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             key: `p_jump`,
             frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 5,
-                prefix: 'Uniball-Redux/Effects/JumpParticles/', suffix: '.png'
+                prefix: "Uniball-Redux/Effects/JumpParticles/", suffix: ".png"
             }),
             frameRate: 12,
             repeat: 0,
@@ -204,7 +212,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             key: `p_fall`,
             frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 6,
-                prefix: 'Uniball-Redux/Effects/FallParticles/', suffix: '.png'
+                prefix: "Uniball-Redux/Effects/FallParticles/", suffix: ".png"
             }),
             frameRate: 12,
             repeat: 0,
@@ -217,7 +225,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     private regenerateStamina(time: number): void {
-        const delay = 1000;
+        const delay: integer = 1000;
 
         return ((time: number) => {
 
@@ -249,19 +257,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     private die(color: OrbColor): void {
-        const _this = this;
-
         this.setVelocity(0, 100);
 
         this.anims
             .play(`dead_${color}`, true)
-            .on('animationcomplete', () => {
+            .on("animationcomplete", () => {
                 // TODO: Something should happen here, but t'what?
             });
     }
 
     private createRunningParticles(time: number): void {
-        const delay = 250;
+        const delay: integer = 250;
 
         return ((time: number) => {
 
@@ -272,9 +278,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.lastTime = time;
 
             this.currentScene.add
-                .sprite(this.x, this.y + 25, Constants.SHEET_KEY, 'Uniball-Redux/Effects/RunParticles/1.png')
-                .play('p_run')
-                .on('animationcomplete', function () {
+                .sprite(this.x, this.y + 25, Constants.SHEET_KEY, "Uniball-Redux/Effects/RunParticles/1.png")
+                .play("p_run")
+                .on("animationcomplete", function (): void {
                     this.destroy();
                 });
         })(time);
@@ -286,11 +292,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 this.x,
                 this.y + 17,
                 Constants.SHEET_KEY,
-                'Uniball-Redux/Effects/JumpParticles/1.png'
+                "Uniball-Redux/Effects/JumpParticles/1.png"
             )
-            .play('p_jump')
-            .on('animationcomplete', function () {
-                this.destroy()
+            .play("p_jump")
+            .on("animationcomplete", function (): void {
+                this.destroy();
             });
     }
 
@@ -301,11 +307,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
                 this.x,
                 this.y + 17,
                 Constants.SHEET_KEY,
-                'Uniball-Redux/Effects/FallParticles/1.png'
+                "Uniball-Redux/Effects/FallParticles/1.png"
             )
-            .play('p_fall')
-            .on('animationcomplete', function () {
-                this.destroy()
+            .play("p_fall")
+            .on("animationcomplete", function (): void {
+                this.destroy();
             });
     }
 

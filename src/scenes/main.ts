@@ -1,8 +1,8 @@
-import 'phaser';
-import Player from '../components/player';
-import {EventNames, OrbColor, Registry} from '../types';
-import Orb from '../components/orb';
-import {Constants} from '../constants';
+import "phaser";
+import Player from "../components/player";
+import {EventNames, OrbColor, Registry} from "../types";
+import Orb from "../components/orb";
+import {Constants} from "../constants";
 
 
 export default class MainScene extends Phaser.Scene {
@@ -13,22 +13,16 @@ export default class MainScene extends Phaser.Scene {
     private groups;
 
     constructor() {
-        super('MainScene');
+        super("MainScene");
     }
 
     public preload(): void {
-        this.registry.set('currentOrbColor', OrbColor.red);
+        this.registry.set("currentOrbColor", OrbColor.red);
 
         // this.load.image('grass', 'env/grass.png');
-        this.load.image('stamina', 'player/stamina.png');
+        this.load.image("stamina", "player/stamina.png");
 
-        this.load.multiatlas(Constants.SHEET_KEY, 'uniball-redux.json');
-        // this.load.multiatlas('s_smoke', 'effects/smoke.json', 'effects');
-        // this.load.multiatlas('s_pop', 'effects/pop.json', 'effects');
-
-        // this.load.multiatlas('s_orbs', 'objects/orbs.json', 'objects');
-        // this.load.multiatlas('s_objects', 'objects/objects.json', 'objects');
-        // this.load.multiatlas('s_explode', 'effects/explode.json', 'effects');
+        this.load.multiatlas(Constants.SHEET_KEY, "uniball-redux.json");
 
         for (const orbColorKey in OrbColor) {
 
@@ -39,7 +33,7 @@ export default class MainScene extends Phaser.Scene {
             this.load.multiatlas(
                 `s_peggie_${OrbColor[orbColorKey]}`,
                 `player/peggie-${OrbColor[orbColorKey]}.json`,
-                'player'
+                "player"
             );
         }
     }
@@ -57,45 +51,45 @@ export default class MainScene extends Phaser.Scene {
             x: this.game.canvas.width / 2,
             y: this.game.canvas.height - 65,
             key: `s_peggie_${this.currentColor}`,
-            frame: 'Idle/1.png',
+            frame: "Idle/1.png",
         });
 
         ///// ============== PLATFORMS =================
-        const ground = this.add.tileSprite(
+        const ground: Phaser.GameObjects.TileSprite = this.add.tileSprite(
             0,
             this.game.canvas.height - 16,
             this.game.canvas.width * 2,
             32,
             Constants.SHEET_KEY,
-            'Uniball-Redux/Env/grass.png'
+            "Uniball-Redux/Env/grass.png"
         );
         this.groups.platforms.add(ground);
 
         ///// ============== ORBS =================
 
         this.anims.create({
-            key: 'pop',
+            key: "pop",
             frames: this.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 9,
-                prefix: 'Uniball-Redux/Effects/Burst/',
-                suffix: '.png',
+                prefix: "Uniball-Redux/Effects/Burst/",
+                suffix: ".png",
             }),
             frameRate: 22,
             repeat: 0,
         });
 
         this.anims.create({
-            key: 'explode',
+            key: "explode",
             frames: this.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 7,
-                prefix: 'Uniball-Redux/Effects/Bomb/',
-                suffix: '.png',
+                prefix: "Uniball-Redux/Effects/Bomb/",
+                suffix: ".png",
             }),
             frameRate: 22,
             repeat: 0,
         });
 
-        const orbGroupConfig = {
+        const orbGroupConfig: object = {
             bounceY: 1,
             bounceX: 1,
             collideWorldBounds: true,
@@ -112,34 +106,34 @@ export default class MainScene extends Phaser.Scene {
             wild: this.physics.add.group(orbGroupConfig),
         };
 
-        const colorArray = Object.keys(OrbColor);
+        const colorArray: string [] = Object.keys(OrbColor);
 
         colorArray.forEach((orbColorsKey: string, i: integer) => {
-            const _orb = new Orb({
+            const _orb: Orb = new Orb({
                 scene: this,
                 x: Phaser.Math.Between(50, this.game.canvas.width - 20),
                 y: Phaser.Math.Between(50, this.game.canvas.height - 100),
                 key: Constants.SHEET_KEY,
                 frame: `Uniball-Redux/Objects/Orbs/${i}.png`,
-                color: orbColorsKey,
+                color: OrbColor[orbColorsKey],
             });
-          
+
             this.groups.orbs[orbColorsKey].add(_orb);
         });
 
 
         ///// ============== STAMINA =================
         this.anims.create({
-            key: 'stamina',
-            frames: this.anims.generateFrameNames('s_hud', {
+            key: "stamina",
+            frames: this.anims.generateFrameNames("s_hud", {
                 start: 1, end: 11,
-                suffix: '.png',
+                suffix: ".png",
             }),
             frameRate: 0,
             repeat: 0,
         });
 
-        this.staminaBar = this.add.sprite(this.player.x - 2, this.player.y - 32, 'stamina');
+        this.staminaBar = this.add.sprite(this.player.x - 2, this.player.y - 32, "stamina");
 
         this.events.on(EventNames.RegeneratingStamina, (amount) => {
             this.staminaBar.setAlpha(1);
@@ -152,11 +146,11 @@ export default class MainScene extends Phaser.Scene {
 
 
         this.anims.create({
-            key: 'smoke',
+            key: "smoke",
             frames: this.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 7,
-                prefix: 'Uniball-Redux/Effects/Smoke/',
-                suffix: '.png',
+                prefix: "Uniball-Redux/Effects/Smoke/",
+                suffix: ".png",
             }),
             frameRate: 20,
             repeat: 0,
@@ -195,7 +189,7 @@ export default class MainScene extends Phaser.Scene {
                 this.groups.orbs.purple
             ],
             this.onOrbCollisionWithPlayer,
-            () => {},
+            null,
             this,
         );
 
@@ -208,7 +202,7 @@ export default class MainScene extends Phaser.Scene {
                 this.groups.orbs.purple
             ],
             this.onWildOrbCollisionWithPlayer,
-            () => {},
+            null,
             this,
         );
 
@@ -216,7 +210,7 @@ export default class MainScene extends Phaser.Scene {
             this.player,
             this.groups.orbs.wild,
             this.onWildOrbCollisionWithPlayer,
-            () => {},
+            null,
             this,
         );
     }
@@ -240,17 +234,19 @@ export default class MainScene extends Phaser.Scene {
         ) {
             this.groups.orbs.wild.destroy(true);
             this.player.disableBody();
-            this.add.text(this.game.canvas.width / 2, this.game.canvas.height / 2, 'You done did the thing.', {
-                font: '24px Arial',
-                fill: '#fff',
+            this.add.text(this.game.canvas.width / 2, this.game.canvas.height / 2, "You done did the thing.", {
+                font: "24px Arial",
+                fill: "#fff",
             }).setOrigin(0.5, 0.5);
         }
     }
 
     private onWildOrbCollisionWithPlayer(player: Player, orb: Orb): void {
-        // I subtract one from the index because the frames generated for the animation don't seem to be zeroth based.
-        const index = orb.anims.currentFrame.index - 1;
-        const colors = ['red', 'green', 'purple', 'blue'];
+        /*
+         I subtract one from the index because the frames generated for the animation don't seem to be zeroth based.
+        */
+        const index: number = orb.anims.currentFrame.index - 1;
+        const colors: string[] = ["red", "green", "purple", "blue"];
 
         this.currentColor = OrbColor[colors[index]];
         this.registry.set(Registry.CurrentColor, this.currentColor);
@@ -262,11 +258,11 @@ export default class MainScene extends Phaser.Scene {
                 this.player.x,
                 this.player.y,
                 Constants.SHEET_KEY,
-                'Uniball-Redux/Effects/Smoke/0.png',
+                "Uniball-Redux/Effects/Smoke/0.png",
             )
             .setScale(2, 2)
-            .play('smoke')
-            .on('animationcomplete', function () {
+            .play("smoke")
+            .on("animationcomplete", function (): void {
                 this.destroy();
             });
 
@@ -282,9 +278,9 @@ export default class MainScene extends Phaser.Scene {
             return;
         }
 
-        const key = Object.keys(OrbColor);
+        const key: string[] = Object.keys(OrbColor);
 
-        const _orb = new Orb({
+        const _orb: Orb = new Orb({
             scene: this,
             x: Phaser.Math.Between(50, this.game.canvas.width - 20),
             y: Phaser.Math.Between(50, this.game.canvas.height - 100),
@@ -292,7 +288,7 @@ export default class MainScene extends Phaser.Scene {
             frame: `Uniball-Redux/Objects/Orbs/${key.indexOf(orb.color)}.png`,
             color: orb.color,
         });
-        const _orb2 = new Orb({
+        const _orb2: Orb = new Orb({
             scene: this,
             x: Phaser.Math.Between(50, this.game.canvas.width - 20),
             y: Phaser.Math.Between(50, this.game.canvas.height - 100),
@@ -305,26 +301,26 @@ export default class MainScene extends Phaser.Scene {
         this.groups.orbs[orb.color].add(_orb2);
     }
 
-    private onOrbCollisionWithPlayer(player: Player, orb: Orb): void {
+    private onOrbCollisionWithPlayer(_: Player, orb: Orb): void {
         if (this.currentColor === orb.color) {
-            const score = this.registry.get(Registry.Score) + 1;
+            const score: any = this.registry.get(Registry.Score) + 1;
             this.registry.set(Registry.Score, score);
             this.events.emit(EventNames.ScoreIncrease, score);
         } else {
             this.multiplyAnOrb(orb);
-   
+
             this.add
                 .sprite(
                     orb.x,
                     orb.y,
                     Constants.SHEET_KEY,
-                    'Uniball-Redux/Effects/Bomb/0.png',
+                    "Uniball-Redux/Effects/Bomb/0.png",
                 )
-                .play('explode')
-                .on('animationcomplete', function () {
+                .play("explode")
+                .on("animationcomplete", function (): void {
                     this.destroy();
                 });
-            
+
             // this.events.emit(EventNames.PlayerHit);
         }
 
@@ -336,19 +332,19 @@ export default class MainScene extends Phaser.Scene {
             return;
         }
 
-        const secondsToWait = Phaser.Math.Between(1, 5) * 1000;
+        const secondsToWait: number = Phaser.Math.Between(1, 5) * 1000;
 
         this.time.delayedCall(secondsToWait, () => {
-            const orb = new Orb({
+            const orb: Orb = new Orb({
                 scene: this,
                 x: Phaser.Math.Between(50, 300),
                 y: Phaser.Math.Between(50, 300),
                 key: Constants.SHEET_KEY,
-                frame: 'Uniball-Redux/Objects/Orbs/1.png',
+                frame: "Uniball-Redux/Objects/Orbs/1.png",
                 color: OrbColor.wild,
             });
             this.groups.orbs.wild.add(orb);
-            orb.anims.play('cycleColors');
+            orb.anims.play("cycleColors");
         }, [], this);
     }
 }

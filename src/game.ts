@@ -1,16 +1,17 @@
-import 'phaser';
-import scenes from './scenes/scenes';
+import "phaser";
+import scenes from "./scenes/scenes";
 
 const config: Phaser.Types.Core.GameConfig = {
-    title: 'Uniball Redux',
-    version: '0.0.1.0',
+    title: "Uniball Redux",
+    version: "1.0.0.0",
     type: Phaser.AUTO,
-    backgroundColor: '#203f3e',
+    backgroundColor: "#203f3e",
     width: 800,
     height: 400,
     physics: {
-        default: 'arcade',
+        default: "arcade",
         arcade: {
+            useTree: true,
             gravity: { y: 300 },
             debug: false,
         },
@@ -23,7 +24,7 @@ const config: Phaser.Types.Core.GameConfig = {
 };
 
 const resize: () => void = (): void => {
-    const canvas: HTMLCanvasElement = document.querySelector('canvas');
+    const canvas: HTMLCanvasElement = document.querySelector("canvas");
     const windowWidth: number = window.innerWidth;
     const windowHeight: number = window.innerHeight;
     const windowRatio: number = windowWidth / windowHeight;
@@ -41,5 +42,5 @@ const resize: () => void = (): void => {
 window.onload = (): void => {
     const game: Phaser.Game = new Phaser.Game(config);
     resize();
-    window.addEventListener('resize', resize, false);
+    window.addEventListener("resize", resize, false);
 };

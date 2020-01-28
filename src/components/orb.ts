@@ -1,7 +1,16 @@
-import 'phaser';
-import {OrbColor} from '../types';
+import "phaser";
+import {OrbColor} from "../types";
 import Text = Phaser.GameObjects.Text;
-import {Constants} from '../constants';
+import {Constants} from "../constants";
+
+interface IOrbConstructor {
+    x: integer;
+    y: integer;
+    scene: Phaser.Scene;
+    key: any;
+    frame?: string;
+    color: OrbColor;
+}
 
 export default class Orb extends Phaser.Physics.Arcade.Sprite {
     readonly color: OrbColor;
@@ -11,7 +20,7 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
     private label: Text;
     private debug: boolean = false;
 
-    constructor(params) {
+    constructor(params: IOrbConstructor) {
         super(params.scene, params.x, params.y, params.key, params.frame);
 
         this.color = params.color;
@@ -37,8 +46,8 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
 
         this.currentScene.add
             .sprite(this.x, this.y, Constants.SHEET_KEY)
-            .play('pop')
-            .on('animationcomplete', function () {
+            .play("pop")
+            .on("animationcomplete", function (): void {
                 this.destroy();
             });
 
@@ -50,21 +59,21 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
         this.registerAnimations();
 
         if (this.color === OrbColor.wild) {
-            this.anims.play('cycleColors');
+            this.anims.play("cycleColors");
         }
     }
 
     private registerAnimations(): void {
-        if (typeof this.currentScene.anims.get('cycleColors') !== 'undefined') {
+        if (typeof this.currentScene.anims.get("cycleColors") !== "undefined") {
             return;
         }
 
         this.currentScene.anims.create({
-            key: 'cycleColors',
+            key: "cycleColors",
             frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
                 start: 0, end: 3,
-                prefix: 'Uniball-Redux/Objects/Orbs/',
-                suffix: '.png',
+                prefix: "Uniball-Redux/Objects/Orbs/",
+                suffix: ".png",
             }),
             frameRate: 1,
             repeat: -1,
