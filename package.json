@@ -15,9 +15,6 @@
     "dev": "parcel ./src/index.html",
     "production": "cross-env NODE_ENV=production parcel build ./src/index.html"
   },
-  "engines": {
-    "node": "13.2.0"
-  },
   "staticFiles": {
     "staticPath": [
       "src/assets"
