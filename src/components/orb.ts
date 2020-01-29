@@ -53,7 +53,11 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
 
         this.setScale(this.scaledSize, this.scaledSize);
         this.body.setCircle(16, 0, 0);
-        this.setMaxVelocity(this.maxVelocity, this.maxVelocity);
+
+        const vx: integer = Phaser.Math.Between(Constants.O_MIN_SPEED, Constants.O_MAX_SPEED);
+        let rnd: integer = Phaser.Math.Between(-1, 1);
+
+        this.setMaxVelocity(Constants.O_MAX_SPEED, Constants.O_MAX_SPEED);
 
         this.setCollideWorldBounds(true);
         this.registerAnimations();
