@@ -82,5 +82,38 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
             frameRate: 1,
             repeat: -1,
         });
+
+        this.currentScene.anims.create({
+            key: "pop",
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
+                start: 0, end: 9,
+                prefix: "Uniball-Redux/Effects/Burst/",
+                suffix: ".png",
+            }),
+            frameRate: 28,
+            repeat: 0,
+        });
+
+        this.currentScene.anims.create({
+            key: "collected",
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
+                start: 0, end: 10,
+                prefix: "Uniball-Redux/Effects/Collected/",
+                suffix: ".png",
+            }),
+            frameRate: 40,
+            repeat: 0,
+        });
+
+        this.currentScene.anims.create({
+            key: "explode",
+            frames: this.currentScene.anims.generateFrameNames(Constants.SHEET_KEY, {
+                start: 0, end: 7,
+                prefix: "Uniball-Redux/Effects/Bomb/",
+                suffix: ".png",
+            }),
+            frameRate: 22,
+            repeat: 0,
+        });
     }
 }
