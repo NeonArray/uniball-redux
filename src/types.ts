@@ -1,7 +1,7 @@
 
 export enum OrbColor {
-    green = "green",
     red = "red",
+    green = "green",
     purple = "purple",
     blue = "blue",
     wild = "wild",
