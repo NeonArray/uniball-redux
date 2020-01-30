@@ -267,7 +267,7 @@ export default class MainScene extends Phaser.Scene {
 
     private onOrbCollisionWithPlayer(_: Player, orb: Orb): void {
         if (this.currentColor === orb.color) {
-            const score: any = this.registry.get(Registry.Score) + 1;
+            const score: integer = this.registry.get(Registry.Score) + 1;
             this.registry.set(Registry.Score, score);
             this.events.emit(EventNames.ScoreIncrease, score);
         } else {
