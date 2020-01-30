@@ -14,11 +14,10 @@ interface IOrbConstructor {
 
 export default class Orb extends Phaser.Physics.Arcade.Sprite {
     readonly color: OrbColor;
-    readonly maxVelocity: number = 150;
     readonly scaledSize: number = 0.65;
     private currentScene: Phaser.Scene;
     private label: Text;
-    private debug: boolean = false;
+    private debug: boolean = false; // TODO: This should really be a global flag
 
     constructor(params: IOrbConstructor) {
         super(params.scene, params.x, params.y, params.key, params.frame);
@@ -53,9 +52,6 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
 
         this.setScale(this.scaledSize, this.scaledSize);
         this.body.setCircle(16, 0, 0);
-
-        const vx: integer = Phaser.Math.Between(Constants.O_MIN_SPEED, Constants.O_MAX_SPEED);
-        let rnd: integer = Phaser.Math.Between(-1, 1);
 
         this.setMaxVelocity(Constants.O_MAX_SPEED, Constants.O_MAX_SPEED);
 
