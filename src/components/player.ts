@@ -19,6 +19,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     private staminaDelayTime: number;
     private stamina: integer = 4;
     private health: integer = 1;
+    private staminaBar: Phaser.GameObjects.Sprite;
 
     constructor(params: IPlayerConstructorParams) {
         super(params.scene, params.x, params.y, params.key, params.frame);
@@ -92,10 +93,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         if (!this.isMoving) {
             this.anims.play(`idle_${color}`, true);
         }
-    }
 
-    public getStamina(): integer {
-        return this.stamina;
+        this.staminaBar.x = this.x - 2;
+        this.staminaBar.y = this.y - 32;
     }
 
     private hit(): void {
@@ -114,6 +114,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.setCollideWorldBounds(true);
 
         this.registerObservers();
+
+        this.addStaminaBar();
     }
 
     private registerObservers(): void {
@@ -217,6 +219,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             frameRate: 12,
             repeat: 0,
         });
+    }
+
+    private addStaminaBar(): void {
+        this.staminaBar = this.currentScene.add.sprite(this.x - 2, this.y - 32, "stamina");
+
+        this.currentScene.events.on(EventNames.RegeneratingStamina, (amount) => {
+            this.staminaBar.setAlpha(1);
+            this.staminaBar.setScale(amount / Constants.P_MAX_STAMINA, 1);
+        }, this);
+
+        this.currentScene.events.on(EventNames.StaminaMaxed, () => {
+            this.staminaBar.setAlpha(0.15);
+        }, this);
     }
 
     private reduceStamina(): void {
