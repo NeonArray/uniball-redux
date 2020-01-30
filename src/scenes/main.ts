@@ -94,8 +94,8 @@ export default class MainScene extends Phaser.Scene {
             bounceX: 1,
             collideWorldBounds: true,
             allowGravity: false,
-            velocityX: Phaser.Math.Between(20, 200),
-            velocityY: Phaser.Math.Between(20, 200),
+            velocityX: Phaser.Math.Between(Constants.O_MIN_SPEED, Constants.O_MAX_SPEED),
+            velocityY: Phaser.Math.Between(Constants.O_MIN_SPEED, Constants.O_MAX_SPEED),
         };
 
         this.groups.orbs = {
