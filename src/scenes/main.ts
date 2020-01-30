@@ -179,13 +179,14 @@ export default class MainScene extends Phaser.Scene {
     }
 
     public update(time: number): void {
-
         this.player.update(time);
 
-        this.staminaBar.x = this.player.x - 2;
-        this.staminaBar.y = this.player.y - 32;
-
         this.checkWinCondition();
+
+        this.groups.orbs.red.getChildren().forEach(orb => orb.update());
+        this.groups.orbs.purple.getChildren().forEach(orb => orb.update());
+        this.groups.orbs.green.getChildren().forEach(orb => orb.update());
+        this.groups.orbs.blue.getChildren().forEach(orb => orb.update());
     }
 
     private checkWinCondition(): void {
