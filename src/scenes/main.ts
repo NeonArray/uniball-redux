@@ -4,7 +4,6 @@ import {EventNames, OrbColor, Registry} from "../types";
 import Orb from "../components/orb";
 import {Constants} from "../constants";
 
-
 export default class MainScene extends Phaser.Scene {
     private player: Player;
     private staminaBar;
@@ -19,9 +18,7 @@ export default class MainScene extends Phaser.Scene {
     public preload(): void {
         this.registry.set("currentOrbColor", OrbColor.red);
 
-        // this.load.image('grass', 'env/grass.png');
         this.load.image("stamina", "player/stamina.png");
-
         this.load.multiatlas(Constants.SHEET_KEY, "uniball-redux.json");
 
         for (const orbColorKey in OrbColor) {
@@ -67,28 +64,6 @@ export default class MainScene extends Phaser.Scene {
 
         ///// ============== ORBS =================
 
-        this.anims.create({
-            key: "pop",
-            frames: this.anims.generateFrameNames(Constants.SHEET_KEY, {
-                start: 0, end: 9,
-                prefix: "Uniball-Redux/Effects/Burst/",
-                suffix: ".png",
-            }),
-            frameRate: 22,
-            repeat: 0,
-        });
-
-        this.anims.create({
-            key: "explode",
-            frames: this.anims.generateFrameNames(Constants.SHEET_KEY, {
-                start: 0, end: 7,
-                prefix: "Uniball-Redux/Effects/Bomb/",
-                suffix: ".png",
-            }),
-            frameRate: 22,
-            repeat: 0,
-        });
-
         const orbGroupConfig: object = {
             bounceY: 1,
             bounceX: 1,
@@ -132,18 +107,6 @@ export default class MainScene extends Phaser.Scene {
             frameRate: 0,
             repeat: 0,
         });
-
-        this.staminaBar = this.add.sprite(this.player.x - 2, this.player.y - 32, "stamina");
-
-        this.events.on(EventNames.RegeneratingStamina, (amount) => {
-            this.staminaBar.setAlpha(1);
-            this.staminaBar.setScale(amount / Constants.P_MAX_STAMINA, 1);
-        }, this);
-
-        this.events.on(EventNames.StaminaMaxed, () => {
-            this.staminaBar.setAlpha(0.15);
-        }, this);
-
 
         this.anims.create({
             key: "smoke",
