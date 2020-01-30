@@ -265,11 +265,24 @@ export default class MainScene extends Phaser.Scene {
         this.groups.orbs[orb.color].add(_orb2);
     }
 
-    private onOrbCollisionWithPlayer(_: Player, orb: Orb): void {
+    private onOrbCollisionWithPlayer(player: Player, orb: Orb): void {
+
         if (this.currentColor === orb.color) {
             const score: integer = this.registry.get(Registry.Score) + 1;
             this.registry.set(Registry.Score, score);
             this.events.emit(EventNames.ScoreIncrease, score);
+
+            // this.add
+            //     .sprite(
+            //         orb.x,
+            //         orb.y,
+            //         Constants.SHEET_KEY,
+            //         "Uniball-Redux/Effects/Collected/0.png",
+            //     )
+            //     .play("collected")
+            //     .on("animationcomplete", function ():void {
+            //         this.destroy();
+            //     });
         } else {
             this.multiplyAnOrb(orb);
 
