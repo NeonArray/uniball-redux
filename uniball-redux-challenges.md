@@ -55,3 +55,39 @@ this.cache.json.get('key');
 When I set a breakpoint in the `create` method of my main scene, or HUD scene, I get a chance to explore this data via the web console. I 
 access `this.cache` and was returned an object. I investigated the object and found that all of the entries for each respective
 asset type, were totally empty. 
+
+
+## Dashes
+
+I wanted to create another mechanism for the player to escape danger in the form of a lateral dash. My goal was to 
+allow the left (`a`) or right (`d`) key to be double-tapped quickly in order to execute the move.
+
+The problem I have run into is the exact method in which to implement this. My initial thought was perhaps
+there was already a built-in method in the Phaser API that would easily allow me to set a sequential order
+of keys and pass a callback to execute, or something of that nature. I was unable to find such a method, so
+my next thought was to look for something that kept a timer between keystrokes. That way a user couldn't tap D twice
+in 1-2 seconds and still execute a dash.
+
+The Phaser API has support for this kind of thing, but it was not executing when I tried it. I registered the
+key sequence on the keyboard object, and then set-up a listener with a callback.
+
+```typescript
+this.currentScene.input.keyboard.createCombo("dd", { maxKeyDelay: 1000 });
+
+this.currentScene.input.on("keycombomatch", (e) => {
+    debugger;
+});
+```
+
+I set the `maxKeyDelay` to a full second to give me a starting point that I could then whittle down slowly until
+I found a sweet spot. However, like I said, this code just didn't execute.
+
+Well, I just found the solution. In my event listener, I forgot to listen to `keyboard`.
+
+```typescript
+this.currentScene.input.keyboard.on("keycombomatch", () => {});
+```
+
+Funny enough, after testing this input method - I don't like it. The benefit is lost because the act of double tapping
+a key, even quickly, causes the character to stutter and basically defeats the purpose. I think what I'll do instead 
+is assign the `Shift` key as a dash instead.
