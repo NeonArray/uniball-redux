@@ -1,5 +1,6 @@
 
 export enum Constants {
+    G_GRAVITY = 400,
     O_MIN_SPEED = 75,
     O_MAX_SPEED = 150,
     P_MOVE_SPEED = 250,
