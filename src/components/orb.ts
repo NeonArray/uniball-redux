@@ -43,8 +43,14 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
     private initSprite(): void {
         this.currentScene.physics.world.enable(this);
 
+        this.registerAnimations();
+
         this.currentScene.add
-            .sprite(this.x, this.y, Constants.SHEET_KEY)
+            .sprite(
+                this.x,
+                this.y,
+                Constants.SHEET_KEY
+            )
             .play("pop")
             .on("animationcomplete", function (): void {
                 this.destroy();
@@ -56,7 +62,6 @@ export default class Orb extends Phaser.Physics.Arcade.Sprite {
         this.setMaxVelocity(Constants.O_MAX_SPEED, Constants.O_MAX_SPEED);
 
         this.setCollideWorldBounds(true);
-        this.registerAnimations();
 
         if (this.color === OrbColor.wild) {
             this.anims.play("cycleColors");
