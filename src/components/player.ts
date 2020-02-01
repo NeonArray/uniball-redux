@@ -335,7 +335,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             ["LEFT", this.addKey("A")],
             ["RIGHT", this.addKey("D")],
             ["DOWN", this.addKey("S")],
-            ["UP", this.addKey("W")]
+            ["UP", this.addKey("W")],
+            ["DASH", this.addKey("SHIFT")]
         ]);
     }
 }
