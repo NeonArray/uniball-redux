@@ -1,5 +1,6 @@
 import "phaser";
 import scenes from "./scenes/scenes";
+import {Constants} from './constants';
 
 const config: Phaser.Types.Core.GameConfig = {
     title: "Uniball Redux",
