@@ -239,6 +239,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.currentScene.events.emit(EventNames.RegeneratingStamina, this.stamina);
     }
 
+    private waitTillDashComplete(time: number): void {
+        const delay: integer = 250;
+
+        return ((time: number) => {
+            if (time < this.isDashingTimer + delay) {
+                return;
+            }
+            this.isDashingTimer = time;
+        })(time);
+    }
+
     private regenerateStamina(time: number): void {
         const delay: integer = 1000;
 
