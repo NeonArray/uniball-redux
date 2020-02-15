@@ -37,6 +37,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             return;
         }
 
+        // dash
+        if (this.inputKeys.get("LEFT").isDown || this.inputKeys.get("RIGHT").isDown) {
+            if (Phaser.Input.Keyboard.JustDown(this.inputKeys.get("DASH"))) {
+                this.setVelocity(Constants.P_DASH_SPEED);
+                this.isDashing = true;
+                this.isDashingTimer = time + 150;
+            }
+        }
+
         if (this.inputKeys.get("LEFT").isDown) {
             this.setFlipX(true);
             this.setVelocityX(Constants.P_MOVE_SPEED * -1);
