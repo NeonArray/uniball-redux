@@ -1,6 +1,7 @@
 import "phaser";
 import { Constants } from "../constants";
-import { IConstructorParams, OrbColor, Registry, EventNames } from "../types";
+import { OrbColor, Registry, EventNames } from "../types";
+import debug from "./debug";
 
 interface IPlayerConstructorParams {
     scene: Phaser.Scene;
