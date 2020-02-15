@@ -14,6 +14,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     private currentScene: Phaser.Scene;
     private inputKeys: Map<string, Phaser.Input.Keyboard.Key> = new Map();
     private isMoving: boolean = false;
+    private isDashing: boolean = false;
+    private isDashingTimer: number = 0;
     private isFalling: boolean = false;
     private lastTime: number;
     private staminaDelayTime: number;
