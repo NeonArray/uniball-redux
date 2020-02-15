@@ -209,8 +209,14 @@ export default class MainScene extends Phaser.Scene {
         /*
          I subtract one from the index because the frames generated for the animation don't seem to be zeroth based.
         */
-        const index: number = orb.anims.currentFrame.index - 1;
+        let index: number;
         const colors: string[] = ["red", "green", "purple", "blue"];
+
+        try {
+            index = orb.anims.currentFrame.index - 1;
+        } catch (exception) {
+            index = 1;
+        }
 
         this.currentColor = OrbColor[colors[index]];
         this.registry.set(Registry.CurrentColor, this.currentColor);
